@@ -1,8 +1,10 @@
 import { Suspense, useEffect, useState } from "react";
 import "./MainBoard.css";
 import mainVideo from "/src/assets/videos/2040.mp4";
+
 export default function MainBoard() {
   const [isDisplay, setIsDisplay] = useState(false);
+  
   useEffect(() => {
     setTimeout(() => {
       setIsDisplay(true);
