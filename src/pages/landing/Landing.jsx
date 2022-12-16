@@ -13,7 +13,7 @@ export default function Landing() {
       <IndustriesIntro />
       <CarouselSection />
       <IntroTwo />
-      <IntroContact/>
+      <IntroContact />
     </div>
   );
 }
