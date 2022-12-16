@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import Landing from "./pages/landing/Landing";
+// import Landing from "./pages/landing/Landing";
 
 function App() {
   let footer = document.getElementById('footer')
@@ -12,10 +12,10 @@ function App() {
     <>
       <Header />
       <Routes>
-        {/* <Route path="/" element={<Landing />}></Route> */}
-        <Route path="/resources" element={<Landing />}></Route>
+        <Route path="/" element={<>...</>}></Route>
+        {/* <Route path="/resources" element={<Landing />}></Route>
         <Route path="/products" element={<Landing />}></Route>
-        <Route path="/contacts" element={<Landing />}></Route>
+        <Route path="/contacts" element={<Landing />}></Route> */}
       </Routes>
 
       <Footer />
