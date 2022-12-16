@@ -1,6 +1,6 @@
 import { Suspense, useEffect, useState } from "react";
 import "./MainBoard.css";
-
+import mainVideo from "/src/assets/videos/2040.mp4";
 export default function MainBoard() {
   const [isDisplay, setIsDisplay] = useState(false);
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function MainBoard() {
       <div className="video-filter"></div>
       <Suspense fallback={<>loading...</>}>
         <video autoPlay muted loop id="main-board-video">
-          <source src="/src/assets/videos/2040.mp4" type="video/mp4" />
+          <source src={mainVideo} type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
       </Suspense>
