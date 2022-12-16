@@ -1,0 +1,11 @@
+.animation-show {
+    display: block !important;
+}
+
+.animation-show {
+    display: none !important;
+}
+
+:root {
+    --animate-delay: 0.5s;
+  }

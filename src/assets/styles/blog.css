@@ -1,0 +1,68 @@
+/* blog style */
+
+:root {
+	/* Colors */
+	--blue: #00A8E1;
+	--green: #A0DF3D;
+	--black: #84898E;
+	--dark-grey: #364659;
+	--light-grey: #CCD2D9;
+	--white: #ffffff;
+}
+
+#hero.blog {background:url('../image/Dark_OnPoint_Screen.jpg') center no-repeat; background-size:cover;}
+
+ul.blog-buttons {margin:0;}
+ul.blog-buttons li {margin:0 0 10px; list-style:none; }
+ul.blog-buttons li a {
+  display:block;
+  background-color:var(--light-grey);
+  color:var(--black);
+  background-size:auto 60%;
+  background-position:center right 10px;
+  background-repeat:no-repeat;
+  text-transform:uppercase;
+  padding:15px 50px 15px 15px;
+  line-height:1.4;
+  border-radius:4px;
+  font-size:85%;
+  transition:all 0.3s;
+}
+ul.blog-buttons li.industrial-digital-technology a {background-position:center right 15px;}
+ul.blog-buttons li.active a,
+ul.blog-buttons li a:hover {background-color:var(--blue); color:var(--white);}
+
+div#resources {background-color:white;}
+
+div#resources .b3-newblog-posts .resource-slide {float:left; min-height: 420px;}
+div#resources .b3-newblog-posts .post-button-container {left:10%;}
+div#resources .b3-newblog-posts h3 {font-size: 108.5%; margin-bottom: 10px; margin-top:10px;}
+
+
+div#resources .b3-featured-post {display:flex; margin-bottom:75px; align-items:center; gap:30px; max-width:998px; -webkit-box-shadow: 0px 3px 30px #00000010; box-shadow: 0px 3px 30px #00000010;}
+div#resources .b3-featured-post-image {width:60%; background-size:cover; background-repeat:no-repeat; background-position:center;}
+div#resources .b3-featured-post-image img {width:100%;}
+div#resources .b3-featured-post-content.resource-slide {width:40%; box-shadow:none; margin:0;}
+div#resources .b3-featured-post-content .slide-content {float:none; padding-bottom:0;}
+div#resources .b3-featured-post-content .post-button-container {position:relative; left:auto; top:auto; right:auto; bottom:auto;}
+
+
+div#resources .article-category {margin-bottom:50px; padding-bottom:10px; border-bottom:solid thin var(--blue);}
+div#resources .article-category h2 {padding-left:75px; background-repeat:no-repeat; background-position:center left; padding-top:5px; background-size:auto 100%;}
+
+
+#article {padding:50px 0 120px; background:white;}
+#article .article-left {float:left; width:70%;}
+#article h1 {width:70%;}
+#article .post-thumbnail {width:100%; margin-bottom:50px;}
+#article hr {margin-bottom:45px; padding-bottom:15px; border:none; border-bottom:solid thin var(--blue);}
+#article h3 {font-size:125%;}
+#article .article-right {float:right; width:20%;}
+
+#article .tags span {display:inline-block; background-color:var(--blue); color:white; padding:7px 13px; margin:0 10px 10px 0;}
+
+@media (max-width:1000px) {
+	#article h1 {width:100%;}
+	#article .article-left,
+	#article .article-right {float:none; width:100%; padding-right:0%;}
+}

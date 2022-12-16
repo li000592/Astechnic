@@ -1,0 +1,57 @@
+/* /*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * rubik:
+ *   - http://typekit.com/eulas/00000000000000003b9b25b3
+ *   - http://typekit.com/eulas/00000000000000003b9b25b4
+ *   - http://typekit.com/eulas/00000000000000003b9b25b5
+ *   - http://typekit.com/eulas/00000000000000003b9b25b7
+ *   - http://typekit.com/eulas/00000000000000003b9b25b8
+ *   - http://typekit.com/eulas/00000000000000003b9b25b9
+ *
+ * Â© 2009-2022 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2020-04-22 20:41:50 UTC"}*/
+
+@import url("p.css");
+
+@font-face {
+font-family:"rubik";
+src:url("../font/l.woff2") format("woff2"),url("../font/d.woff") format("woff"),url("../font/a.woff") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"rubik";
+src:url("../font/l1.woff2") format("woff2"),url("../font/d1.woff") format("woff"),url("../font/a1.woff") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"rubik";
+src:url("../font/l2.woff2") format("woff2"),url("../font/d2.woff") format("woff"),url("../font/a2.woff") format("opentype");
+font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;
+}
+
+@font-face {
+font-family:"rubik";
+src:url("../font/l3.woff2") format("woff2"),url("../font/d3.woff") format("woff"),url("../font/a3.woff") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"rubik";
+src:url("../font/l4.woff2") format("woff2"),url("../font/d4.woff") format("woff"),url("../font/a4.woff") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"rubik";
+src:url("../font/l5.woff2") format("woff2"),url("../font/d5.woff") format("woff"),url("../font/a5.woff") format("opentype");
+font-display:auto;font-style:normal;font-weight:900;font-stretch:normal;
+}
+
+.tk-rubik { font-family: "rubik",sans-serif; } */

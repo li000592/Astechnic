@@ -1,0 +1,9 @@
+/* Microsoft Edge */
+@supports (-ms-ime-align:auto) {
+
+}
+
+/* IE 10 and 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+}

@@ -1,0 +1,87 @@
+@media (max-width: 1200px) {
+  .grid-item {
+    width: 49.5%;
+    float: left;
+    margin-bottom: 1%;
+  }
+}
+
+div#banner .text-area {
+  width: 70%;
+  float: left;
+}
+
+div#callout .text-box {
+  position: relative;
+  width: 100%;
+  float: left;
+  max-width: 475px;
+}
+
+div#callout section {
+  padding: 50px 0;
+}
+
+div#banner section {
+  padding: 45px 0;
+}
+
+@media (max-width: 975px) {
+  #cta .text-box {
+    width: 100%;
+    float: left;
+  }
+}
+
+#cta section {
+  padding: 50px 0;
+}
+
+div#callout.cards section {
+  padding: 30px 0;
+}
+
+footer section {
+  padding: 45px 0;
+  display: block;
+  z-index: 99;
+  position: relative;
+}
+
+footer#footer .right {
+  width: 100%;
+  float: none;
+}
+
+footer#footer .left {
+  width: 100%;
+  float: none;
+  margin-bottom: 50px;
+}
+
+ul#menu-footer-menu li {
+  margin-right: 0;
+  float: none;
+  margin-bottom: 10px;
+}
+
+ul#menu-footer-menu {
+  float: left;
+  padding: 10px 0;
+  margin: 0;
+  line-height: 2;
+}
+
+ul#menu-copyright-menu {
+  float: left;
+  padding: 25px 0 0;
+  margin: 0;
+  font-size: 75%;
+}
+
+ul#menu-footer-menu li:last-child a {
+  position: relative;
+  display: block;
+  margin-top: 15px;
+  line-height: 1.5;
+}

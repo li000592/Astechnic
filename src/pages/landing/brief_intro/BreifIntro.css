@@ -1,0 +1,38 @@
+.breif-info-container {
+  display: flex;
+}
+
+.info-left-section {
+  width: 40%;
+}
+
+.info-right-section {
+  /* width: 500px;
+  display: flex;
+  flex-direction: row; */
+
+  display: table;
+  table-layout: fixed;
+  min-width: 900px; /* some minimum width is a good idea. */
+  border-spacing: 20px 0; /* note that spacing is also applied to right and left ends */
+  background-color: #666;
+  margin: 0 auto;
+}
+
+.breif-images {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.breif-images,
+img {
+  width: 100%;
+  max-width: 678px;
+  /* float: left;
+  clear: both; */
+}
+
+.intro-text {
+    font-size: 10px;
+}

@@ -1,0 +1,49 @@
+.carousel-container {
+  background-image: linear-gradient(rgba(29, 29, 49, 0.82), rgba(29, 29, 49, 0.8)), url("../../../assets/images/carousel.webp");
+  background-color: #232438 !important;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* filter: grayscale(20%);
+    -webkit-filter: grayscale(20%); */
+}
+
+.carousel-text {
+  color: white;
+  text-align: center;
+  width: 60%;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.carousel-body-container {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-quote {
+  color: #00a8e1;
+  /* font-size: 72px; */
+}
+.carousel-quote-2 {
+  align-self: flex-end;
+}
+
+.carousel-sub-title {
+  color: white;
+  text-align: center;
+  width: 60%;
+  font-size: 11px;
+  font-weight: 700;
+  width: max-content;
+  margin-bottom: 0;
+}
+
+.carousel-sub-title-1 {
+  border-top: #a0df3d 1px solid;
+  padding-top: 12px;
+
+}

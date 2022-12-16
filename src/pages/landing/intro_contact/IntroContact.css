@@ -1,0 +1,57 @@
+.intro-contact {
+  height: 250px;
+  /* background-color: antiquewhite; */
+  display: flex;
+}
+
+.contact-right {
+  background-image: url("../../../assets/images/intro-contact.jpg");
+  height: 100%;
+  width: 60%;
+  background-position: center; /* Center the image */
+  position: relative;
+}
+
+.contact-left {
+  background-color: #000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  width: 40%;
+}
+
+.triangle-brick-dark-grey {
+  position: absolute;
+  height: 210px;
+  width: 100%;
+  background: linear-gradient(134deg, #000 40%, rgba(0, 0, 0, 0) 0);
+  z-index: 1000;
+}
+.triangle-brick-light-grey {
+  position: absolute;
+  height: 210px;
+  width: 100%;
+  background: linear-gradient(134deg, #364659 45%, rgba(0, 0, 0, 0) 0);
+}
+
+.contact-left h3 {
+}
+
+.contact-left p {
+  font-size: 12px;
+  font-heigt: 24px;
+}
+
+#contact-btn {
+  transform: rotate(0deg);
+  width: 144px;
+  height: 53px;
+  transform-origin: center center;
+  pointer-events: auto;
+  cursor: pointer;
+  transition-property: none;
+  background-color: transparent;
+  z-index: 266;
+}

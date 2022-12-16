@@ -1,0 +1,299 @@
+.modal-window {
+  visibility: hidden;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.59);
+  z-index: 8999;
+}
+
+.modal-window div.container {
+  top: 11vh;
+  left: 0% !important;
+  margin-top: 0 !important;
+  position: relative !important;
+  margin: 0 auto !important;
+}
+
+#locations.modal-window div.container {
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  /* top: 10vh; */
+}
+
+@media (max-width: 800px) {
+  .modal-window div.container {
+    top: 0;
+    height: 100vh;
+  }
+}
+
+.modal-window div .select {
+  margin: inherit !important;
+}
+
+.modal-close {
+  color: white;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 50px;
+  text-align: center;
+  top: 5%;
+  width: 70px;
+  text-decoration: none;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+a.close:before {
+  background-image: none !important;
+}
+
+a.close {
+  width: auto;
+  position: absolute !important;
+  float: right;
+  right: 0;
+  /* top: 33px; */
+}
+
+a.close img {
+  width: 100px;
+  float: right;
+  right: 0;
+  /* top: 33px; */
+  position: absolute;
+  top: 0;
+  /* pointer-events: none; */
+}
+
+img.modal-bottom-left {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+img.modal-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 650px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.modal-background {
+  background-size: cover;
+  background-position: 50% 0;
+  width: 100%;
+  max-width: 750px;
+  background-color: #ffffff;
+  background-blend-mode: multiply;
+  min-height: 72.5vh;
+}
+
+h2.modal-title {
+  font-size: 42px;
+  text-align: left;
+  padding: 50px 0 30px;
+  color: inherit;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#locations h2.modal-title {
+  font-size: 45px;
+  text-align: center;
+  padding: 55px 0 20px;
+  color: #ffde00;
+}
+
+ul.subpages-list {
+  color: white;
+  list-style: square;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: transparent;
+}
+
+ul.subpages-list li {
+  color: white;
+  list-style: square;
+  margin-bottom: 7.5px;
+  line-height: 1.25;
+}
+
+ul.subpages-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul.subpages-list li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.modal-content.content {
+  margin: 65px 0 30px;
+  max-height: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: transparent;
+  padding-bottom: 15px;
+}
+
+#locations .modal-content.content {
+  margin: 30px 0 85px;
+  max-height: 70vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: transparent;
+}
+
+@media (min-width: 800px) {
+  .modal-content.content {
+    max-height: 450px;
+  }
+
+  #locations .modal-content.content {
+    margin: 30px 0 85px;
+    max-height: 45vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: transparent;
+  }
+
+  #locations h2.modal-title {
+    font-size: 45px;
+    text-align: center;
+    padding: 100px 0 20px;
+    color: #ffde00;
+  }
+}
+
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+/* width */
+.modal-window ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.modal-window ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.modal-window ::-webkit-scrollbar-thumb {
+  background: #00a8e1;
+}
+
+/* Handle on hover */
+.modal-window ::-webkit-scrollbar-thumb:hover {
+  background: #f3f6f7;
+}
+
+#locations section.map-title {
+  top: 90px;
+  z-index: 99999;
+  position: relative;
+  width: 100vw;
+  height: 0;
+}
+
+@media (max-width: 875px) {
+  .modal-window div {
+    /* width: 80% !important; */
+    /* height: 100vh; */
+  }
+
+  .modal-content.content {
+    margin: 100px 0 95px;
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: transparent;
+    margin: 30px 0;
+  }
+
+  a.close {
+    width: auto;
+    position: absolute !important;
+    float: right;
+    right: 0;
+    top: 0;
+  }
+
+  img.modal-bottom-left {
+    width: 75px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  img.modal-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    pointer-events: none;
+    z-index: 0;
+    max-width: 85vw;
+  }
+
+  a.close img {
+    width: 75px;
+    float: right;
+    right: 0;
+    /* top: 33px; */
+    position: absolute;
+    top: 0;
+    /* pointer-events: none; */
+    max-width: 15vw;
+  }
+
+  h2.modal-title {
+    font-size: 25px !important;
+    text-align: left;
+    padding: 20px 0 20px !important;
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  #locations.modal-window div.container {
+    clip-path: none !important;
+  }
+
+  #locations section.map-title {
+    display: none !important;
+  }
+
+  .company-listed {
+    min-height: 275px !important;
+  }
+}

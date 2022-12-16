@@ -1,0 +1,46 @@
+/* CSS Document */
+
+@import url('css2.css');
+
+#b3-sliders {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.b3-sliders-quote {width:5%;}
+.b3-sliders-quote img {width:100%;}
+
+.b3-sliders {width:90%; overflow:hidden;}
+.b3-slider-container {
+    width:100%;
+    text-align: center;
+    color:white;
+}
+.b3-slider {
+    float:left;
+    width:100%;
+}
+.b3-slider p {font-size:110%;}
+.b3-slider h4 {text-transform:uppercase; padding-top:15px; margin-top:15px; border-top:solid 4px #A0DF3D; display:inline-block;}
+
+.slick-dots {margin-top:50px; text-align:center;}
+.slick-dots li {display:inline-block; margin:5px;}
+.slick-dots li button {width:15px; height:15px; border-radius:50%; background-color:white; opacity:0.5; color:white; border:none;}
+.slick-dots li.slick-active button {opacity:1;}
+
+#b3-sliders button.slick-arrow {
+    display:block !important;
+    color:transparent;
+    position:absolute;
+    bottom:0;
+    background:none;
+    border:none;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:25px;
+}
+#b3-sliders button.slick-prev {left:50%; margin-left:-100px;}
+#b3-sliders button.slick-next {right:50%; margin-right:-100px;}
+#b3-sliders button.slick-prev:before,
+#b3-sliders button.slick-next:after {color:white;}
+#b3-sliders button.slick-prev:before {content:"<"; }
+#b3-sliders button.slick-next:after {content:">"; }
