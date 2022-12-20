@@ -1,3 +1,11 @@
+import AboutIntro from "./aboutintro/AboutIntro";
+import AboutMainBoard from "./aboutmainboard/AboutMainBoard";
+
 export default function About() {
-  return <div style={{ height: "1vh", display: "flex", justifyContent: "center", alignContent:"center" }}>Landing</div>;
+  return (
+    <div style={{}}>
+      <AboutMainBoard />
+      <AboutIntro />
+    </div>
+  );
 }
