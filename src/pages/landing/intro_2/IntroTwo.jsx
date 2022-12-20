@@ -12,7 +12,6 @@ export default function IntroTwo() {
       </div>
       <div className="blue-brick-container">
         <div className="blue-brick-triangle" />
-        ssssssssss
       </div>
     </section>
   );
