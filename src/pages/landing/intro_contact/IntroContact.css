@@ -13,8 +13,8 @@
 }
 
 .contact-left {
-  background-color: #000;
-  color: #ffffff;
+  background-color: var(--black);
+  color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,14 +26,14 @@
   position: absolute;
   height: 210px;
   width: 100%;
-  background: linear-gradient(134deg, #000 40%, rgba(0, 0, 0, 0) 0);
+  background: linear-gradient(134deg, var(--black) 40%, var(--transparent) 0);
   z-index: 1000;
 }
 .triangle-brick-light-grey {
   position: absolute;
   height: 210px;
   width: 100%;
-  background: linear-gradient(134deg, #364659 45%, rgba(0, 0, 0, 0) 0);
+  background: linear-gradient(134deg, var(--dark-grey) 45%, var(--transparent) 0);
 }
 
 .contact-left h3 {

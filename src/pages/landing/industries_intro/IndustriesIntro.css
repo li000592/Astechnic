@@ -1,5 +1,5 @@
 .industries-intro-section {
-  background-color: rgba(204, 210, 217, 0.2);
+  background-color: var(--dirty-grey);
   margin-top: 20px;
   padding: 20px;
 }
@@ -8,10 +8,10 @@
   position: relative;
   top: -6px;
   padding-right: 2%;
-  color: rgb(54, 70, 89);
+  color: var(--dirty-grey);
   font-size: 20px;
   font-weight: 600;
-  border-bottom: 3px rgb(160, 223, 61) solid;
+  border-bottom: 3px var(--theme-color-1) solid;
   width: max-content;
 }
 
@@ -20,7 +20,7 @@
   justify-content: space-between;
 }
 .thumb-img {
-  border-bottom: 2px rgb(20, 21, 20) solid;
+  border-bottom: 2px var(--dark-grey) solid;
   padding-bottom: 8px;
 }
 
@@ -30,5 +30,5 @@
 }
 
 .add-symbol {
-    color: rgb(160, 223, 61);
+    color: var(--theme-color-1);
   }

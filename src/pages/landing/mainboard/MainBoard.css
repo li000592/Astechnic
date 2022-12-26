@@ -12,13 +12,18 @@
   border-top:30px solid #9FDF3D;
   border-right:30px solid #9FDF3D; */
   width: 40px;
-  background: linear-gradient(to bottom right, rgba(1, 1, 1, 0) 0%, rgba(1, 1, 1, 0) 50%, #9FDF3D 50%, #9FDF3D 100%);
+  background: linear-gradient(
+    to bottom right,
+    var(--transparent) 0%,
+    var(--transparent) 50%,
+    var(--theme-color-1) 50%,
+    var(--theme-color-1) 100%
+  );
 }
 .green-brick {
-  background-color: #9FDF3D;
+  background-color: var(--theme-color-1);
   height: 30px;
   width: 80px;
-  
 }
 .green-brick-container {
   width: 100%;
@@ -41,7 +46,7 @@
 
 .video-title {
   font-size: 24px;
-  color: #fff;
+  color: var(--white);
   font-weight: 700;
 }
 
@@ -50,7 +55,7 @@
 }
 
 .video-line {
-  background-color: #00a8e1;
+  background-color: var(--theme-color-3);
   width: 70%;
   height: 1px;
   /* animation: rotation 1s linear; */
@@ -79,27 +84,26 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  background: rgba(131, 131, 131, 0.541);
+  /* background: rgba(131, 131, 131, 0.541); */
+  background: var(--trans-grey);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   transform: rotate(180deg);
   margin-top: 25%;
- 
 }
 
-.more-button-container:hover  {
-  animation: slideOutDown  1s ease-in ;
+.more-button-container:hover {
+  animation: slideOutDown 1s ease-in;
 }
-.more-button:hover  {
-  background: rgba(22, 132, 250, 0.541);
+.more-button:hover {
+  background: var(--trans-blue);
 }
 
 @keyframes slideOutDown {
   from {
     margin-top: 25%;
-    background: rgba(131, 131, 131, 0.541);
+    background:  var(--trans-grey);
   }
   to {
     margin-top: 45%;
-    
   }
-} 
+}

@@ -16,7 +16,7 @@ const textList = [
 
 export default function CarouselSection() {
   return (
-    <section style={{ marginTop: "50px", color: "#494949", padding: "20px" }}>
+    <section style={{ marginTop: "50px", padding: "20px" }}>
       <Carousel animation="fade" navButtonsAlwaysVisible autoPlay={false}>
         {textList.map((item, i) => (
           <Paper
