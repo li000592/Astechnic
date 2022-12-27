@@ -22,7 +22,7 @@
 .blue-brick-container {
   width: 50%;
   background: linear-gradient(52deg, var(--light-grey-2) 60%, var(--transparent) 0);
-  color: white;
+  color: var(--white);
   overflow: hidden;
   display: flex;
   flex-direction: column-reverse;

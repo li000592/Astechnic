@@ -2,15 +2,17 @@
   --theme-color-1: #a0df3d;
   --theme-color-2: #9fdf3d;
   --theme-color-3: #00a8e1;
+  --dark-blue: #0099cc;
   --white: #fff;
   --dirty-white: #ccd2d933;
   --black: #000;
   --dark: #232438;
   --dark-grey: #232438;
+  --dark-grey-2: #161f26;
   --light-grey: #8383838a;
   --light-grey-2: #eeeeee8e;
   --trans-grey: rgba(131, 131, 131, 0.541);
   --transparent: rgba(1, 1, 1, 0) 0%;
   --trans-blue: rgba(22, 132, 250, 0.541);
-  --trans-dark-grey: rgba(29, 29, 49, 0.8)
+  --trans-dark-grey: rgba(29, 29, 49, 0.8);
 }

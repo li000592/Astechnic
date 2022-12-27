@@ -1,0 +1,35 @@
+.page-banner-contianer {
+  display: flex;
+  align-items: center;
+  height: 360px;
+  background: linear-gradient(133deg, var(--light-grey-2) 8%, var(--transparent) 0);
+}
+
+.background-div {
+  background-color: var(--dark-grey-2);
+}
+
+.page-banner-contianer h1 {
+  color: var(--white);
+  font-weight: 1000;
+  font-size: 64px;
+}
+
+.banner-blue-brick-container {
+  width: 100%;
+  height: 60px;
+  margin-top: -60px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.banner-blue-brick {
+  background-color: var(--theme-color-3);
+  height: 60px;
+  width: 180px;
+}
+
+.banner-blue-brick-triangle {
+  width: 60px;
+  background: linear-gradient( to bottom right, var(--transparent) 0%, var(--transparent) 50%, var(--theme-color-3) 50%, var(--theme-color-3) 100% );
+}

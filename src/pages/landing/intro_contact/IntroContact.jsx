@@ -12,7 +12,7 @@ export default function IntroContact() {
         {/* <button>CONTACT US</button> */}
         <a
           id="contact-btn"
-          class="component page-object hotspot"
+          className="component page-object hotspot"
           href="https://www.onpointsolutions.com/contact-us/"
           data-container-id="5f88abe989090"
         ></a>

@@ -1,0 +1,20 @@
+.featured-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  
+}
+
+.featured-left h1 {
+  font-weight: 1000;
+}
+.featured-content-container {
+  margin-top: 48px;
+  background: linear-gradient(57deg, var(--light-grey-2) 80%, var(--transparent) 0);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 24px;
+
+}
