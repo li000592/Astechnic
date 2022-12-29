@@ -37,7 +37,7 @@ export default function Header() {
                   id="menu-item-25"
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"
                 >
-                  <Link to="/contact-us" style={{ color: "inherit" }}>
+                  <Link to="/contact-us" style={{backgroundColor: "var(--theme-color-1)"}}>
                     Contact Us
                   </Link>
                 </li>

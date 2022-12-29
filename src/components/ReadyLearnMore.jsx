@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BottomBorderButton from "./BottomBorderButton";
 
 export default function ReadyLearnMore() {
@@ -11,8 +12,10 @@ export default function ReadyLearnMore() {
           system performance through optimization technologies developed by
           proven experts in your domain.
         </p>
-        <div style={{ padding: "20px"}}>
-          <BottomBorderButton label="contact us." />
+        <div style={{ padding: "20px" }}>
+          <Link to={"/contact-us"}>
+            <BottomBorderButton label="contact us." />
+          </Link>
         </div>
       </div>
       <div className="contact-right">

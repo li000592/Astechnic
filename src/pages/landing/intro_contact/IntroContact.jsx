@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BottomBorderButton from "../../../components/BottomBorderButton";
 import "./IntroContact.css";
 
@@ -13,7 +14,9 @@ export default function IntroContact() {
         </p>
         {/* <button>CONTACT US</button> */}
         <div className="learn-more-button">
-          <BottomBorderButton label="Contact us" />
+          <Link to={"/contact-us"}>
+            <BottomBorderButton label="Contact us" />
+          </Link>
         </div>
       </div>
       <div className="contact-right">
