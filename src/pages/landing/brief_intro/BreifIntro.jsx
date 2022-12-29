@@ -23,6 +23,7 @@ export default function BreifIntro() {
       container
       spacing={2}
       className="breif-info-container"
+      id="breif-intro"
       sx={{ width: "85%", maxWidth: "1465px", margin: "0 auto" }}
     >
       {animationTimer > 500 && (

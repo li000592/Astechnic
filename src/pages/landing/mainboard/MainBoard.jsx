@@ -4,7 +4,7 @@ import mainVideo from "/src/assets/videos/2040.mp4";
 
 export default function MainBoard() {
   const [isDisplay, setIsDisplay] = useState(false);
-  
+
   useEffect(() => {
     setTimeout(() => {
       setIsDisplay(true);
@@ -23,7 +23,9 @@ export default function MainBoard() {
 
       <div className="content">
         {isDisplay && (
-          <h1 className="video-title animate__animated animate__fadeInDown">INDUSTRIAL STRENGTH DIGITAL SOLUTIONS</h1>
+          <h1 className="video-title animate__animated animate__fadeInDown">
+            INDUSTRIAL STRENGTH DIGITAL SOLUTIONS
+          </h1>
         )}
 
         <div className="line-container animate__animated animate__rotateInDownLeft">
@@ -45,7 +47,9 @@ export default function MainBoard() {
 
       {isDisplay && (
         <div className="more-button-container ">
-          <div className="more-button" onClick={() => console.log(123)}></div>
+          <a href="#breif-intro">
+            <div className="more-button"></div>
+          </a>
         </div>
       )}
     </section>
