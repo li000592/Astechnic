@@ -26,7 +26,7 @@ export default function BreifIntro() {
       sx={{ width: "85%", maxWidth: "1465px", margin: "0 auto" }}
     >
       {animationTimer > 500 && (
-        <Grid xs={3} className="animate__animated animate__fadeInLeft" item sx={{ alignSelf: "center" }}>
+        <Grid xs={4} className="animate__animated animate__fadeInLeft" item sx={{ alignSelf: "center" }}>
           <p className="intro-text">
             Today, the expectation to operate at increasingly optimal levels using digital technology has never been
             higher. That’s where we come in.
@@ -37,7 +37,7 @@ export default function BreifIntro() {
           </p>
         </Grid>
       )}
-      <Grid xs={9} container item spacing={2}>
+      <Grid xs={8} container item spacing={2}>
         {animationTimer > 1000 && (
           <Grid xs={4} item className="animate__animated  animate__fadeInDown">
             <img src={intro3} alt="" />

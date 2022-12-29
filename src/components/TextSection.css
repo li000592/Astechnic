@@ -1,0 +1,11 @@
+.text-section-container {
+    margin: 50px 0;
+}
+.text-section-container h2 {
+  color: var(--theme-color-3);
+  font-weight: 700;
+}
+
+.text-section-container p { 
+    font-size: 18px;
+}

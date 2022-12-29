@@ -1,5 +1,5 @@
 .intro-two {
-  height: 250px;
+  height: 350px;
   /* background-color: antiquewhite; */
   display: flex;
   flex-direction: row-reverse;
@@ -10,18 +10,15 @@
 }
 
 .blue-brick-triangle {
-  /* width: 40px;
-  height: 20px;
-  background: linear-gradient(to bottom right, rgba(1, 1, 1, 0) 0%, rgba(1, 1, 1, 0) 50%, #00a8e1 50%, #00a8e1 100%); */
-  width: 30px;
-  height: 40px;
-  background: linear-gradient(50deg, var(--theme-color-3)  20px, var(--transparent) 0);
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(50deg, var(--theme-color-3) 60px, var(--transparent) 0);
   overflow: hidden;
 }
 
 .blue-brick-container {
   width: 50%;
-  background: linear-gradient(52deg, var(--light-grey-2) 60%, var(--transparent) 0);
+  background: linear-gradient(52deg, var(--light-grey-2) 70%, var(--transparent) 0);
   color: var(--white);
   overflow: hidden;
   display: flex;
@@ -29,6 +26,7 @@
 }
 
 .two-title {
+  margin-top: 24px;
   font-weight: 1000;
   transform-origin: center center;
   opacity: 1;
@@ -40,7 +38,7 @@
   filter: blur(0px);
   text-transform: none;
   font-style: normal;
-  font-size: 24px;
+  font-size: 30px;
   color: var(--dark-grey);
   z-index: 225;
   font-family: "Rubik SemiBold-Normal-CzICQAJy";
@@ -69,12 +67,10 @@
   transition-property: none;
   filter: blur(0px);
   text-transform: none;
-  font-weight: 200;
   font-style: normal;
-  font-size: 12px;
+  font-size: 18px;
   color: var(--dark-grey);
   z-index: 227;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   overflow: visible;
   white-space: pre-wrap;
   text-align: left;

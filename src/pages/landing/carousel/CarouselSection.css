@@ -16,7 +16,8 @@
   color: var(--white);
   text-align: center;
   width: 60%;
-  font-size: 11px;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 1.5;
 }
 
@@ -27,6 +28,8 @@
 
 .carousel-quote {
   color: var(--theme-color-3);
+  font-size: 120px;
+  font-family: fantasy;
 }
 .carousel-quote-2 {
   align-self: flex-end;
@@ -36,13 +39,13 @@
   color: var(--white);
   text-align: center;
   width: 60%;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   width: max-content;
   margin-bottom: 0;
 }
 
 .carousel-sub-title-1 {
-  border-top: var(--theme-color-1) 1px solid;
+  border-top: var(--theme-color-1) 2px solid;
   padding-top: 12px;
 }

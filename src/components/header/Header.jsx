@@ -7,9 +7,9 @@ export default function Header() {
       <nav id="navigation">
         <section className="clearfix aos-init aos-animate" data-aos="fade-in">
           <div className="logo">
-            <a href="https://www.onpointsolutions.com">
+            <Link to="/">
               <img src="https://www.onpointsolutions.com/wp-content/themes/onpoint/img/logo2.jpg" />
-            </a>
+            </Link>
 
             <div className="company-logo"></div>
           </div>
@@ -25,21 +25,21 @@ export default function Header() {
                   Resources
                 </Link>
               </button>
-              <button onClick={(ev) => console.log(ev)} className="products-dropdown">
-                <Link to="/products" style={{ color: "inherit" }}>
-                Products
-                </Link>
-              </button>
-              <button className="products-dropdown aws-link">
-                <a href="https://www.onpointsolutions.com/aws-solutions/" style={{ color: "inherit" }}>
+              <button className="products-dropdown resources-link">
+                <Link to="/solutions" style={{ color: "inherit" }}>
                   Solutions
-                </a>
+                </Link>
               </button>
             </div>
             <div className="main-menu">
               <ul id="menu-main-menu" className="menu">
-                <li id="menu-item-25" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
-                  <a href="https://www.onpointsolutions.com/contact-us/">Contact Us</a>
+                <li
+                  id="menu-item-25"
+                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"
+                >
+                  <Link to="/contact-us" style={{ color: "inherit" }}>
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>{" "}

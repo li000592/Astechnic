@@ -1,0 +1,39 @@
+.contact-left-container {
+  background-color: var(--dark-grey-2);
+  height: 100%;
+  color: var(--white);
+  padding: 15%;
+}
+
+.contact-left-container h2 {
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 250%;
+}
+.contact-left-container p {
+  margin: 0 0 15px 0;
+  line-height: 2;
+  font-weight: 300;
+}
+
+.contact-right-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-right-container p {
+  width: 60%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.interest-checkbox-group {
+    width: 60%;
+}

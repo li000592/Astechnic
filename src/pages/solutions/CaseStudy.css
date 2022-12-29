@@ -1,0 +1,19 @@
+.case-study-container {
+  height: 550px;
+  background: linear-gradient(
+    37deg,
+    var(--light-grey-2) 40%,
+    var(--transparent) 0
+  );
+  overflow: hidden;
+  display: flex;
+  padding-top: 56px;
+}
+
+.case-study-left {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -22,13 +22,13 @@
 }
 .green-brick {
   background-color: var(--theme-color-1);
-  height: 30px;
-  width: 80px;
+  height: 50px;
+  width: 220px;
 }
 .green-brick-container {
   width: 100%;
-  height: 30px;
-  margin-top: -30px;
+  height: 50px;
+  margin-top: -50px;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -45,13 +45,13 @@
 }
 
 .video-title {
-  font-size: 24px;
+  font-size: 250%;
   color: var(--white);
   font-weight: 700;
 }
 
 .video-text {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .video-line {

@@ -16,25 +16,26 @@ const textList = [
 
 export default function CarouselSection() {
   return (
-    <section style={{ marginTop: "50px", padding: "20px" }}>
-      <Carousel animation="fade" navButtonsAlwaysVisible autoPlay={false}>
-        {textList.map((item, i) => (
-          <Paper
-            key={`test3-item-${i}`}
-            elevation={10}
-            style={{ height: 250 }}
-            className="HeightItem carousel-container"
-          >
-            <div className="carousel-body-container">
-              <h1 className="carousel-quote">"</h1>
-              <p className="carousel-text">{item.body}</p>
-              <h1 className="carousel-quote carousel-quote-2">"</h1>
-            </div>
-            <p className="carousel-sub-title-1 carousel-sub-title">{item.subTitle[0]}</p>
-            <p className="carousel-sub-title">{item.subTitle[1]}</p>
-          </Paper>
-        ))}
-      </Carousel>
-    </section>
+    <Carousel animation="fade" navButtonsAlwaysVisible autoPlay={false}>
+      {textList.map((item, i) => (
+        <Paper
+          key={`test3-item-${i}`}
+          elevation={10}
+          style={{ height: 350 }}
+          className="HeightItem carousel-container"
+        >
+          <div className="carousel-body-container">
+            <h1 className="carousel-quote">&ldquo;</h1>
+            <p className="carousel-text">{item.body}</p>
+
+            <h1 className="carousel-quote carousel-quote-2">&bdquo;</h1>
+          </div>
+          <p className="carousel-sub-title-1 carousel-sub-title">
+            {item.subTitle[0]}
+          </p>
+          <p className="carousel-sub-title">{item.subTitle[1]}</p>
+        </Paper>
+      ))}
+    </Carousel>
   );
 }

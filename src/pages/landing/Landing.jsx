@@ -11,7 +11,9 @@ export default function Landing() {
       <MainBoard />
       <BreifIntro />
       <IndustriesIntro />
-      <CarouselSection />
+      <section style={{ marginTop: "50px"}}>
+        <CarouselSection />
+      </section>
       <IntroTwo />
       <IntroContact />
     </div>
