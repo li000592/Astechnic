@@ -18,7 +18,7 @@ export default function LearnMoreSection() {
               efficiently and improve operational goals.
             </p>
           </div>
-          <BottomBorderButton label="LEARN MORE ABOUT KES" />
+          <BottomBorderButton label="LEARN MORE ABOUT KES" color="var(--black)" />
         </Grid>
         <Grid item sx={12} md={6}></Grid>
       </Grid>

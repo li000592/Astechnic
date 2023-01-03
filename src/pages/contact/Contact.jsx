@@ -54,7 +54,7 @@ export default function Contact() {
   };
   return (
     <Grid container>
-      <Grid item xs={12} md={6}>
+      <Grid item sx={12} md={6}>
         <div className="contact-left-container">
           <h2>See how we can help optimize your domain.</h2>
           <p>
@@ -64,12 +64,12 @@ export default function Contact() {
           </p>
         </div>
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item sx={12} md={6}>
         <div className="contact-right-container">
           {contactFormElements.map((object) => formRender(object))}
           <div className="input-container">
             <div style={{ width: "60%" }}>
-              <BottomBorderButton label="submit" />
+              <BottomBorderButton label="submit" color="var(--black)"/>
             </div>
           </div>
         </div>

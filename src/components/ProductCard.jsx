@@ -28,7 +28,7 @@ export default function ProductCard() {
           <Typography variant="body2" color="text.secondary">
             {data.product}
           </Typography>
-          <Typography gutterBottom variant="h5" component="div" sx={{color: "var(--dark-blue)", fontWeight: "800"}}>
+          <Typography gutterBottom variant="h5" component="div" sx={{color: "var(--theme-color-2)", fontWeight: "800"}}>
             {data.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">

@@ -1,0 +1,19 @@
+#small-head {
+  display: none;
+
+}
+.small-logo {
+  width: 120px;
+}
+
+@media (max-width: 414px) {
+  #big-head {
+    display: none;
+  }
+  #small-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
