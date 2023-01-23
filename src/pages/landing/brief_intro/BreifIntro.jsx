@@ -22,52 +22,37 @@ export default function BreifIntro() {
       spacing={2}
       className="breif-info-container"
       id="breif-intro"
-      sx={{ width: "85%", maxWidth: "1465px", margin: "0 auto" }}
+      // sx={{ width: "85%", maxWidth: "1465px", margin: "0 auto" }}
     >
       {animationTimer > 500 && (
-        <Grid
-          sx={12}
-          md={4}
-          className="animate__animated animate__fadeInLeft"
-          item
-        >
+        <Grid xs={12} md={5} xl={3} className="animate__animated animate__fadeInLeft" item>
           <div style={{ alignSelf: "center" }}>
             <p className="intro-text">
-              Today, the expectation to operate at increasingly optimal levels
-              using digital technology has never been higher. That’s where we
-              come in.
+              Today, the expectation to operate at increasingly optimal levels using digital technology has never been
+              higher. That’s where we come in.
             </p>
             <p className="intro-text">
-              OnPoint is a portfolio of digital solutions that delivers enhanced
-              system performance through optimization technologies developed by
-              proven experts in your domain.
+              OnPoint is a portfolio of digital solutions that delivers enhanced system performance through optimization
+              technologies developed by proven experts in your domain.
             </p>
           </div>
         </Grid>
       )}
-      <Grid sx={12} md={8} item>
-        <Grid container spacing={2}>
+      <Grid xs={12} md={7} xl={9} item>
+        <Grid container spacing={1}>
           {animationTimer > 1000 && (
-            <Grid
-              sx={4}
-              item
-              className="animate__animated  animate__fadeInDown"
-            >
-              <img src={intro3} alt="" />
+            <Grid xs={4} item className="animate__animated  animate__fadeInDown">
+              <img src={"https://storage.cloud.google.com/ny_pdf/assets/images/intro3.png"} alt="" />
             </Grid>
           )}
           {animationTimer > 2000 && (
-            <Grid sx={4} item className="animate__animated  animate__fadeInUp">
-              <img src={intro2} alt="" />
+            <Grid xs={4} item className="animate__animated  animate__fadeInUp">
+              <img src={"https://storage.cloud.google.com/ny_pdf/assets/images/intro2.png"} alt="" />
             </Grid>
           )}
           {animationTimer > 3000 && (
-            <Grid
-              sx={4}
-              item
-              className="animate__animated  animate__fadeInDown"
-            >
-              <img src={intro1} alt="" />
+            <Grid xs={4} item className="animate__animated  animate__fadeInDown">
+              <img src={"https://storage.cloud.google.com/ny_pdf/assets/images/intro1.png"} alt="" />
             </Grid>
           )}
         </Grid>

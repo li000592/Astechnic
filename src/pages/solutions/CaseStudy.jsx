@@ -8,7 +8,7 @@ export default function CaseStudy() {
     <div className="case-study-container">
       <section>
         <Grid container>
-          <Grid item sx={12} md={6}>
+          <Grid item xs={12} md={6}>
             <div className="case-study-left">
               <h2>Case Studies</h2>
               <div className="case-study-line"></div>
@@ -18,9 +18,9 @@ export default function CaseStudy() {
               </p>
             </div>
           </Grid>
-          <Grid item sx={12} md={6} container spacing={2}>
+          <Grid item xs={12} md={6} container spacing={2}>
             {[1, 2].map((i) => (
-              <Grid item sx={12} md={6}>
+              <Grid item xs={12} md={6}>
                 <ProductCard />
               </Grid>
             ))}

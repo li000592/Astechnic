@@ -77,3 +77,29 @@
   padding: 0px;
   line-height: 24px;
 }
+
+.intro-two-container-2 {
+  display: none;
+} 
+
+
+@media (max-width: 700px) {
+  .intro-two-container-1 {
+    display: none;
+  }
+  .intro-two-container-2{
+    display: block;
+    width: 100%;
+    padding: 0 10%;
+    
+  }
+  .intro-two-container-2 .two-body{
+    font-size: 12px;
+  }
+  .intro-two-container-2 .two-title{
+    font-size: 24px;
+  }
+  .blue-brick-container {
+    width: 100%;
+  }
+}

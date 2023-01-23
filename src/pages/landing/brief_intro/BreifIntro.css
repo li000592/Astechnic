@@ -36,3 +36,12 @@ img {
 .intro-text {
     font-size: 20px;
 }
+
+@media (max-width: 700px) {
+  .intro-text {
+    font-size: 16px;
+    padding: 0 8%;
+    font-weight: 400;
+
+}
+}

@@ -17,7 +17,7 @@
   text-align: center;
   width: 60%;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -40,7 +40,7 @@
   text-align: center;
   width: 60%;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   width: max-content;
   margin-bottom: 0;
 }
@@ -48,4 +48,17 @@
 .carousel-sub-title-1 {
   border-top: var(--theme-color-1) 2px solid;
   padding-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .carousel-text {
+    width: 70%;
+    font-size: 12px;
+    font-weight: 600;
+
+  }
+  .carousel-sub-title {
+    font-size: 14px;
+    font-weight: 700;
+  }
 }

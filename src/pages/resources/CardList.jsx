@@ -13,14 +13,14 @@ export default function CardList() {
   return (
     <section style={{ marginTop: "32px" }}>
       <Grid container>
-        <Grid item sx={3}>
+        <Grid item xs={12} md={3}>
           <CardFilters />
         </Grid>
 
-        <Grid item sx={9}>
-          <Grid container spacing={4}>
+        <Grid item xs={12} md={9}>
+          <Grid container spacing={2}>
             {data.map((element, index) => (
-              <Grid item sx={4}>
+              <Grid item xs={12} md={6} xl={4}>
                 <ProductCard data={element} key={listIds + index} />
               </Grid>
             ))}

@@ -9,9 +9,11 @@ export default function Landing() {
   return (
     <div className="landing-container">
       <MainBoard />
-      <BreifIntro />
+      <section style={{ marginTop: "50px" }}>
+        <BreifIntro />
+      </section>
       <IndustriesIntro />
-      <section style={{ marginTop: "50px"}}>
+      <section style={{ marginTop: "50px" }}>
         <CarouselSection />
       </section>
       <IntroTwo />

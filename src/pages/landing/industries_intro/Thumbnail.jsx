@@ -11,7 +11,7 @@ export default function Thumbnail({ category, index }) {
         src={Img1}
         alt=""
       />
-      {/* <Box sx={{ backgroundColor: "grey"}}></Box> */}
+      {/* <Box xs={{ backgroundColor: "grey"}}></Box> */}
 
       <div className="thumb-bottom-container">
         <p className="thumb-text">{category}</p>

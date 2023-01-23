@@ -20,7 +20,7 @@ export default function Contact() {
         formElement = (
           <div className="input-container">
             <p>{element.label}</p>
-            <TextField sx={{ width: "60%" }} />
+            <TextField xs={{ width: "60%" }} />
           </div>
         );
         break;
@@ -54,7 +54,7 @@ export default function Contact() {
   };
   return (
     <Grid container>
-      <Grid item sx={12} md={6}>
+      <Grid item xs={12} md={6}>
         <div className="contact-left-container">
           <h2>See how we can help optimize your domain.</h2>
           <p>
@@ -64,7 +64,7 @@ export default function Contact() {
           </p>
         </div>
       </Grid>
-      <Grid item sx={12} md={6}>
+      <Grid item xs={12} md={6}>
         <div className="contact-right-container">
           {contactFormElements.map((object) => formRender(object))}
           <div className="input-container">

@@ -45,7 +45,7 @@ function Row(props) {
   return (
     <>
       <TableRow sx={{ "& > *": { borderBottom: "unset" } }}>
-        <TableCell component="th" scope="row">
+        <TableCell component="th" scope="row" sx={{ color: "var(--theme-color-3)", fontWeight: 600}}>
           {row.name}
         </TableCell>
         <TableCell align="right">
@@ -59,13 +59,13 @@ function Row(props) {
         </TableCell>
       </TableRow>
       <TableRow>
-        <TableCell style={{ padding: 0 }} colSpan={8}>
+        <TableCell sx={{ padding: 0 }} colSpan={8}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box>
               <Table size="small">
                 <TableBody>
                   {row.history.map((historyRow) => (
-                    <TableRow key={historyRow.date} sx={{ "& > *": { borderBottom: "unset" } }}>
+                    <TableRow key={historyRow.date} xs={{ "& > *": { borderBottom: "unset" } }}>
                       <TableCell component="th" scope="row">
                         {historyRow.date}
                       </TableCell>

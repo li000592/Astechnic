@@ -10,7 +10,7 @@ export default function IndustriesIntro() {
       <p className="industries-title">INDUSTRIES WE SERVE</p>
       <Grid  container spacing={2} style={{ justifyContent: "center" }}>
         {serviesList.map((category, index) => (
-          <Grid sx={12} md={3} item key={category + index}>
+          <Grid xs={12} md={3} item key={category + index}>
             <Thumbnail category={category} index={index} />
           </Grid>
         ))}

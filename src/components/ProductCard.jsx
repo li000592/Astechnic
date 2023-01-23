@@ -16,7 +16,7 @@ let data = {
 
 export default function ProductCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardActionArea>
         <CardMedia
           component="img"

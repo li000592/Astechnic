@@ -109,6 +109,12 @@
 }
 
 @media (max-width: 414px) {
+  .video-title {
+    font-size: 27px;
+  }
+  .video-text {
+    font-size: 18px;
+  }
   #video-container {
     height: 650px;
   }

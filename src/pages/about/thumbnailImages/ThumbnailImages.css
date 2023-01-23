@@ -1,0 +1,25 @@
+.thumbnail-container {
+  display: flex;
+}
+
+.thumbnail-container img {
+  width: 100%;
+}
+
+.frames-div {
+  flex: 1;
+  margin: 8px
+}
+
+.triangle {
+  position: relative;
+}
+.triangle:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 20px solid transparent;
+  border-right: 20px solid #333;
+  border-bottom: 20px solid transparent;
+}

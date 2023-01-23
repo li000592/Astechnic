@@ -11,18 +11,18 @@ export default function FeaturedContent() {
     <div className="featured-content-container">
       <section>
         <Grid container>
-          <Grid item sx={3}>
+          <Grid item xs={12} md={3}>
             <div className="featured-left">
               <h1>
                 Featured<br></br>Content
               </h1>
             </div>
           </Grid>
-          <Grid item sx={9}>
+          <Grid item xs={12} md={9}>
             <div className="featured-right">
               <Grid container spacing={3}>
                 {featuredContent.map((i, index) => (
-                  <Grid item sx={4}>
+                  <Grid item xs={12} md={4}>
                     <ProductCard data={i} key={featuredId + index} />
                   </Grid>
                 ))}

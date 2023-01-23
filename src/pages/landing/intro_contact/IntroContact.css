@@ -2,6 +2,7 @@
   height: 350px;
   /* background-color: antiquewhite; */
   display: flex;
+  margin-top: 24px;
 }
 
 .contact-right {
@@ -37,16 +38,18 @@
 }
 
 .contact-left h5 {
-  font-size: 36px;
+  font-size: 30px;
   padding-top: 20px;
   padding-left: 20px;
-  font-weight: 164px !important;
+  font-weight: 1000;
 }
 
 .contact-left p {
-  font-size: 18px;
-  font-height: 24px;
+  font-size: 16px;
+  /* font-height: 24px; */
   padding: 20px;
+  line-height: 1.7;
+  font-weight: 400;
 }
 
 #contact-btn {
@@ -63,4 +66,31 @@
 
 .learn-more-button {
   margin-left: 20px;
+}
+
+@media (max-width: 1050px) {
+  .contact-left h5 {
+    font-size: 20px;
+  }
+  .contact-left p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 630px) {
+  .contact-left {
+    width: 70%;
+  }
+  .contact-right {
+    width: 30%;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-left {
+    width: 100%;
+  }
+  .contact-right {
+    display: none;
+  }
 }
