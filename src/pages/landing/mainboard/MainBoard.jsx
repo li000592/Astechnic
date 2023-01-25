@@ -15,7 +15,7 @@ export default function MainBoard() {
     <section id="video-container">
       <div className="video-filter"></div>
       <Suspense fallback={<>loading...</>}>
-        <video controls autoplay loop muted playsinline id="main-board-video">
+        <video autoPlay muted loop playsinline id="main-board-video">
           <source src={mainVideo} type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
