@@ -15,7 +15,16 @@ export default function MainBoard() {
     <section id="video-container">
       <div className="video-filter"></div>
       <Suspense fallback={<>loading...</>}>
-        <video autoPlay muted loop playsinline id="main-board-video">
+        <video
+          preload="auto"
+          webkit-playsinline="true"
+          playsinline="playsinline"
+          type="application/x-mpegURL"
+          muted="muted"
+          loop=""
+          tabindex="-1"
+          autoplay="autoplay"
+        >
           <source src={mainVideo} type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
@@ -23,9 +32,7 @@ export default function MainBoard() {
 
       <div className="content">
         {isDisplay && (
-          <h1 className="video-title animate__animated animate__fadeInDown">
-            INDUSTRIAL STRENGTH DIGITAL SOLUTIONS
-          </h1>
+          <h1 className="video-title animate__animated animate__fadeInDown">INDUSTRIAL STRENGTH DIGITAL SOLUTIONS</h1>
         )}
 
         <div className="line-container animate__animated animate__rotateInDownLeft">
