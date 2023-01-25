@@ -42,17 +42,17 @@ export default function BreifIntro() {
         <Grid container spacing={1}>
           {animationTimer > 1000 && (
             <Grid xs={4} item className="animate__animated  animate__fadeInDown">
-              <img src={"https://storage.cloud.google.com/ny_pdf/assets/images/intro3.png"} alt="" />
+              <img src={intro1} alt="" />
             </Grid>
           )}
           {animationTimer > 2000 && (
             <Grid xs={4} item className="animate__animated  animate__fadeInUp">
-              <img src={"https://storage.cloud.google.com/ny_pdf/assets/images/intro2.png"} alt="" />
+              <img src={intro2} alt="" />
             </Grid>
           )}
           {animationTimer > 3000 && (
             <Grid xs={4} item className="animate__animated  animate__fadeInDown">
-              <img src={"https://storage.cloud.google.com/ny_pdf/assets/images/intro1.png"} alt="" />
+              <img src={intro3} alt="" />
             </Grid>
           )}
         </Grid>
