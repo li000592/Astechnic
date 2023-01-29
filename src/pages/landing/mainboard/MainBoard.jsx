@@ -54,7 +54,7 @@ export default function MainBoard() {
 
       {isDisplay && (
         <div className="more-button-container ">
-          <a href="#breif-intro">
+          <a onClick={() => document.getElementById("breif-intro").scrollIntoView()}>
             <div className="more-button"></div>
           </a>
         </div>
