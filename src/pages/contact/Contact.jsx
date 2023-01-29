@@ -20,7 +20,7 @@ export default function Contact() {
         formElement = (
           <div className="input-container">
             <p>{element.label}</p>
-            <TextField xs={{ width: "60%" }} />
+            <TextField />
           </div>
         );
         break;
@@ -58,9 +58,8 @@ export default function Contact() {
         <div className="contact-left-container">
           <h2>See how we can help optimize your domain.</h2>
           <p>
-            Taking your operation to the next level begins with a simple
-            conversation. Tell us about yourself and your industry and we’ll get
-            back to you soon.
+            Taking your operation to the next level begins with a simple conversation. Tell us about yourself and your
+            industry and we’ll get back to you soon.
           </p>
         </div>
       </Grid>
@@ -68,8 +67,8 @@ export default function Contact() {
         <div className="contact-right-container">
           {contactFormElements.map((object) => formRender(object))}
           <div className="input-container">
-            <div style={{ width: "60%" }}>
-              <BottomBorderButton label="submit" color="var(--black)"/>
+            <div>
+              <BottomBorderButton label="submit" color="var(--black)" />
             </div>
           </div>
         </div>

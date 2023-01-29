@@ -33,7 +33,24 @@
   align-items: center;
   margin-bottom: 2%;
 }
-
+.input-container div {
+  width: 60%;
+}
 .interest-checkbox-group {
     width: 60%;
+}
+
+@media (max-width: 900px) {
+  .contact-right-container {
+    padding-top: 20px;
+  }
+  .input-container div {
+    width: 80%;
+  }
+  .interest-checkbox-group {
+      width: 80%;
+  }
+  .contact-right-container p {
+    width: 80%;
+  }
 }
