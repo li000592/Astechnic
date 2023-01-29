@@ -17,15 +17,15 @@
 
 .banner-blue-brick-container {
   width: 100%;
-  height: 60px;
-  margin-top: -60px;
+  height: 50px;
+  margin-top: -50px;
   display: flex;
   flex-direction: row-reverse;
 }
 
 .banner-blue-brick {
   background-color: var(--theme-color-3);
-  height: 60px;
+  height: 50px;
   width: 180px;
 }
 

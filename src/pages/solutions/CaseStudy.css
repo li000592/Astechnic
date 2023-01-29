@@ -1,5 +1,4 @@
 .case-study-container {
-  height: 550px;
   background: linear-gradient(
     37deg,
     var(--light-grey-2) 40%,
@@ -8,6 +7,7 @@
   overflow: hidden;
   display: flex;
   padding-top: 56px;
+  padding-bottom: 20px;
 }
 
 .case-study-left {
@@ -16,4 +16,8 @@
   height: 100%;
   flex-direction: column;
   justify-content: center;
+}
+
+.case-study-left p {
+  width: 80%;
 }

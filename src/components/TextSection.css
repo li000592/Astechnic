@@ -34,3 +34,19 @@
   height: 50px;
   width: 220px;
 }
+
+@media (max-width: 414px) {
+  .text-section-container p {
+    font-size: 14px;
+  }
+  .left-brick-container {
+    height: 30px;
+  }
+  .left-brick-brick {
+    height: 30px;
+    width: 110px;
+  }
+  .left-brick-triangle {
+    width: 30px;
+  }
+}
