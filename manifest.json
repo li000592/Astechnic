@@ -1,0 +1,9 @@
+{
+  "short_name": "astechnic",
+  "name": "Astechnic",
+  "icons": [
+    { "src": "/src/assets/images/logo.png", "type": "image/png", "sizes": "192x192" }
+  ],
+  "start_url": "/index.html",
+  "display": "fullscreen"
+}
