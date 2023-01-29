@@ -12,3 +12,9 @@
   font-weight: 600;
   color: var(--black);
 }
+
+@media (max-width: 414px) {
+    .float .green-brick {
+        font-size: 12px;
+    }
+}

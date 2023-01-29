@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/footer/Footer";
@@ -10,9 +10,11 @@ import Resources from "./pages/resources/Resources";
 import Solution from "./pages/solutions/Solutions";
 import { useLocation } from "react-router-dom";
 import LeaveMessage from "./components/LeaveMessage";
+import MessageDialog from "./components/MessageDialog";
 
 function App() {
   const { pathname } = useLocation();
+  const [isMessageDialogOpen, setIsMessageDialogOpen] = useState(false);
   // let footer = document.getElementById("footer");
   // console.log(footer?.getBoundingClientRect());
   useEffect(() => {
@@ -35,7 +37,8 @@ function App() {
         <Route path="/contact-us" element={<Contact />}></Route>
         <Route path="*" element={<>404 Page</>}></Route>
       </Routes>
-      {!pathname.includes("contact") && <LeaveMessage />}
+      {isMessageDialogOpen && <MessageDialog isOpen={isMessageDialogOpen} setIsOpen={setIsMessageDialogOpen} />}
+      {!pathname.includes("contact") && <LeaveMessage openDialog={() => setIsMessageDialogOpen(true)} />}
       <Footer />
     </>
   );
