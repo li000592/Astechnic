@@ -1,4 +1,5 @@
 import React from "react";
+import LeaveMessage from "../../components/LeaveMessage";
 import PageBanner from "../../components/PageBanner";
 import ReadyLearnMore from "../../components/ReadyLearnMore";
 import TextSection from "../../components/TextSection";

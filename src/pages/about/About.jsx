@@ -1,3 +1,4 @@
+import LeaveMessage from "../../components/LeaveMessage";
 import ReadyLearnMore from "../../components/ReadyLearnMore";
 import TextSection from "../../components/TextSection";
 import AboutIntro from "./aboutintro/AboutIntro";

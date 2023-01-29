@@ -1,3 +1,4 @@
+import LeaveMessage from "../../components/LeaveMessage";
 import BreifIntro from "./brief_intro/BreifIntro";
 import CarouselSection from "./carousel/CarouselSection";
 import IndustriesIntro from "./industries_intro/IndustriesIntro";
