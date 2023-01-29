@@ -1,0 +1,14 @@
+.float {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 2000;
+}
+
+.float .green-brick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: var(--black);
+}
