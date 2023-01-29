@@ -18,12 +18,12 @@ export default function MainBoard() {
         <video
           preload="auto"
           webkit-playsinline="true"
-          playsinline="playsinline"
+          playsInline="playsinline"
           type="application/x-mpegURL"
           muted="muted"
           loop=""
-          tabindex="-1"
-          autoplay="autoplay"
+          tabIndex="-1"
+          autoPlay="autoplay"
         >
           <source src={mainVideo} type="video/mp4" />
           Your browser does not support HTML5 video.

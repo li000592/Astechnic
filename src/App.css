@@ -1,11 +1,17 @@
 .animation-show {
-    display: block !important;
+  display: block !important;
 }
 
 .animation-show {
-    display: none !important;
+  display: none !important;
 }
 
 :root {
-    --animate-delay: 0.5s;
-  }
+  --animate-delay: 0.5s;
+}
+
+li.menu {
+  list-style-type: none !important;
+}
+
+

@@ -6,3 +6,11 @@
   border: none;
   float: right;
 }
+
+#menu-footer-menu {
+  list-style-type: none !important;
+}
+
+#menu-copyright-menu {
+  list-style-type: none !important;
+}
