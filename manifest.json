@@ -1,5 +1,5 @@
 {
-  "short_name": "astechnic",
+  "short_name": "Astechnic",
   "name": "Astechnic",
   "icons": [
     { "src": "/src/assets/images/logo.png", "type": "image/png", "sizes": "192x192" }

@@ -14,7 +14,15 @@ let data = {
   type: "pdf",
 };
 
-export default function ProductCard() {
+export default function ProductCard({data}) {
+
+  const onClickDownload = () => {
+    const link = document.createElement("a");
+    link.download = data.download_path;
+    link.href = `./${data.download_path}`;
+    link.click();
+  }
+
   return (
     <Card>
       <CardActionArea>
@@ -37,7 +45,7 @@ export default function ProductCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" onClick={onClickDownload}>
           {data.type == "pdf" && "DOWNLOAD CASE STUDY"}
         </Button>
       </CardActions>
