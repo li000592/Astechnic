@@ -1935,11 +1935,11 @@ g#Finale {
 }
 
 #menu-copyright-menu a[title="Linkedin"] {
-  background-image: url("src/assets/images/linkedin.svg");
+  background-image: url("./footer/linkedin.svg");
 }
 
 #menu-copyright-menu a[title="Twitter"] {
-  background-image: url("src/assets/images/twitter.svg");
+  background-image: url("./footer/twitter.svg");
 }
 
 #hero.resources section {

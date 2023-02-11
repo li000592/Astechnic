@@ -40,7 +40,8 @@ export default function MessageDialog({ isOpen, setIsOpen }) {
     setIsOpen(true);
   };
 
-  const handleClose = () => {
+  const handleClose = (ev) => {
+    // ev.target.preventDefault()
     setIsOpen(false);
   };
 
@@ -51,7 +52,7 @@ export default function MessageDialog({ isOpen, setIsOpen }) {
     });
   };
 
-  console.log(submitForm);
+
   return (
     <Dialog open={isOpen} onClose={handleClose}>
       <DialogTitle sx={{ backgroundColor: "var(--theme-color-1)" }}>Contact Us</DialogTitle>

@@ -127,6 +127,9 @@
   }
 }
 @media (max-width: 414px) {
+  .content {
+    padding: 0;
+  }
   .more-button-container {
     margin-top: 130%;
   }

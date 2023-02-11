@@ -15,7 +15,7 @@ export default function BreifIntro() {
       clearInterval(time);
     }, 10000);
   }, []);
-  console.log(animationTimer);
+
   return (
     <Grid
       container

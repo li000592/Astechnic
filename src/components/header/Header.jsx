@@ -47,7 +47,7 @@ export default function Header() {
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"
                 >
                   <Link
-                    to="/contact-us"
+                    to="/contactus"
                     style={{ backgroundColor: "var(--theme-color-1)" }}
                   >
                     Contact Us

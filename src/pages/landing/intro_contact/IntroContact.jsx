@@ -13,7 +13,7 @@ export default function IntroContact() {
         </p>
         {/* <button>CONTACT US</button> */}
         <div className="learn-more-button">
-          <Link to={"/contact-us"}>
+          <Link to={"/contactus"}>
             <BottomBorderButton label="Contact us" />
           </Link>
         </div>

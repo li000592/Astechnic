@@ -10,8 +10,6 @@
 	--white: #ffffff;
 }
 
-#hero.blog {background:url('../image/Dark_OnPoint_Screen.jpg') center no-repeat; background-size:cover;}
-
 ul.blog-buttons {margin:0;}
 ul.blog-buttons li {margin:0 0 10px; list-style:none; }
 ul.blog-buttons li a {

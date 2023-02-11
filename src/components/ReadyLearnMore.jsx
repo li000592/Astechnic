@@ -12,7 +12,7 @@ export default function ReadyLearnMore() {
           technologies developed by proven experts in your domain.
         </p>
         <div style={{ padding: "20px" }}>
-          <Link to={"/contact-us"}>
+          <Link to={"/contactus"}>
             <BottomBorderButton label="contact us." />
           </Link>
         </div>

@@ -15,7 +15,7 @@ export default function ThumbnailImage() {
 function ThumbnailFrames() {
   return (
     <div className="frames-div">
-      <img src="https://www.onpointsolutions.com/wp-content/uploads/2020/05/jzhc.jpg"></img>
+      <img src="https://acombustion.com/wp-content/uploads/2020/05/jzhc.jpg"></img>
     </div>
   );
 }

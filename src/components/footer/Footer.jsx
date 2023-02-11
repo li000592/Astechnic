@@ -8,7 +8,7 @@ export default function Footer() {
     <footer id="footer">
       <section className="clearfix">
         <div className="left">
-          <a href="https://www.onpointsolutions.com">
+          <a href="https://www.acombustion.com">
             {/* <img
               src={Logo}
               style={{ width: "230px" }}
@@ -22,7 +22,7 @@ export default function Footer() {
                 id="menu-item-114"
                 className="menu-item menu-item-type-post_type menu-item-object-page menu-item-114"
               >
-                <a href="https://www.onpointsolutions.com/products/ember/">
+                <a href="https://www.acombustion.com/products/ember/">
                   Ember
                 </a>
               </li>
@@ -30,12 +30,12 @@ export default function Footer() {
                 id="menu-item-113"
                 className="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"
               >
-                <a href="https://www.onpointsolutions.com/products/zolo/">
+                <a href="https://www.acombustion.com/products/zolo/">
                   ZoloSCAN2
                 </a>
               </li> */}
               <li id="menu-item-115" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-115">
-                <Link to="/contact-us" style={{ backgroundColor: "var(--theme-color-1)" }}>
+                <Link to="/contactus" style={{ backgroundColor: "var(--theme-color-1)" }}>
                   Contact Us
                 </Link>
               </li>
@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
           <div className="copyright-menu">
             <ul id="menu-copyright-menu" className="menu">
-              <li id="menu-item-608" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-608">
+              {/* <li id="menu-item-608" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-608">
                 <a
                   title="Linkedin"
                   target="_blank"
@@ -57,7 +57,7 @@ export default function Footer() {
                 <a title="Twitter" target="_blank" rel="noopener" href="https://twitter.com/">
                   Twitter
                 </a>
-              </li>
+              </li> */}
               <li id="menu-item-225" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-225">
                 <a href="#">Copyright 2023.</a>
               </li>
@@ -82,7 +82,7 @@ export default function Footer() {
                 </a>
               </li>
               <li id="menu-item-824" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-824">
-                <a href="https://www.onpointsolutions.com/patents/">Patents</a>
+                <a href="https://acombustion.com/patents/">Patents</a>
               </li>
             </ul>
           </div>

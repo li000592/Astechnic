@@ -1926,13 +1926,12 @@ g#MainBox {
 }
 
 #menu-copyright-menu a[title="Linkedin"] {
-  background-image: url("../image/linkedin.svg");
+  background-image: url("footer/linkedin.svg");
 }
 
 #menu-copyright-menu a[title="Twitter"] {
-  background-image: url("../image/twitter.svg");
+  background-image: url("footer/twitter.svg");
 }
-
 #hero.resources section {
   padding: 92.5px 0;
 }

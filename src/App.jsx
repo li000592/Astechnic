@@ -16,7 +16,6 @@ function App() {
   const { pathname } = useLocation();
   const [isMessageDialogOpen, setIsMessageDialogOpen] = useState(false);
   // let footer = document.getElementById("footer");
-  // console.log(footer?.getBoundingClientRect());
   useEffect(() => {
     // "document.documentElement.scrollTo" is the magic for React Router Dom v6
     document.documentElement.scrollTo({
@@ -25,7 +24,7 @@ function App() {
       behavior: "instant", // Optional if you want to skip the scrolling animation
     });
   }, [pathname]);
-  console.log(pathname);
+
   return (
     <>
       <Header />
@@ -34,7 +33,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/resources" element={<Resources />}></Route>
         <Route path="/solutions" element={<Solution />}></Route>
-        <Route path="/contact-us" element={<Contact />}></Route>
+        <Route path="/contactus" element={<Contact />}></Route>
         <Route path="*" element={<>404 Page</>}></Route>
       </Routes>
       {isMessageDialogOpen && <MessageDialog isOpen={isMessageDialogOpen} setIsOpen={setIsMessageDialogOpen} />}

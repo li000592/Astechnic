@@ -145,3 +145,12 @@
   display: flex;
   flex-direction: column-reverse;
 }
+
+@media (max-width: 414px) {
+  .about-main-content {
+    padding: 0;
+  }
+  .about-main-content h1 {
+    font-size: 27px;
+  }
+}

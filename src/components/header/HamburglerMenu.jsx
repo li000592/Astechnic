@@ -47,12 +47,12 @@ export default function TemporaryDrawer() {
               key={text}
               disablePadding
             >
-              <Link to={"/" + text == "Contact Us" ? "contact-us" : text.toLocaleLowerCase()}>
+              <Link to={"/" + text.replace(/\s/g, '').toLocaleLowerCase()} style={{textDecoration: "none"}}>
                 <ListItemButton>
-                  <ListItemIcon>
+                  {/* <ListItemIcon>
                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
+                  </ListItemIcon> */}
+                  <ListItemText primary={text}  />
                 </ListItemButton>
               </Link>
             </ListItem>

@@ -256,8 +256,6 @@ Footer contact */
 #page-contact-form #header-desktop, 
 #watson-box #watson-header {height:47px; width:100%; line-height:2.8125em; position:relative; background-color: #9fdf3d; color: #000; font-weight: normal;}
 #watson-box #watson-header {height:auto; position:relative;}
-#watson-box #watson-header:after {content:"Powered by Watson"; position:absolute; top:-2px; left:36px;}
-#watson-box #watson-header:before {content:""; background:url("https://www.onpointsolutions.com/wp-content/themes/onpoint/css/images/watson.png") center no-repeat; background-size:cover; width:22px; height:22px; position:absolute; top:5px; left:10px;}
 #page-contact-form #icon-custom, #page-contact-form #icon-minimize, #page-contact-form #icon-close {cursor: pointer;display: inline-block;position: absolute;margin: 0 0.625em; top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}
 #page-contact-form #icon-custom {left:0; bottom: -11px;}
 #page-contact-form #icon-minimize {right: 2em;}
