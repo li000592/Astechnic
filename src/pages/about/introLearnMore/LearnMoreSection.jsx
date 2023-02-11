@@ -12,10 +12,9 @@ export default function LearnMoreSection() {
           <div className="text-section-container">
             <h2 style={{ color: "var(--dark-grey)" }}>Our KES Partners.</h2>
             <p>
-              OnPoint’s integrated, data-driven digital solutions leverage
-              decades of industry-leading domain expertise within Koch
-              Engineered Solutions, empowering our customers to operate more
-              efficiently and improve operational goals.
+              Astechinic’s integrated, data-driven digital solutions leverage decades of industry-leading domain
+              expertise within Koch Engineered Solutions, empowering our customers to operate more efficiently and
+              improve operational goals.
             </p>
           </div>
           <BottomBorderButton label="LEARN MORE ABOUT KES" color="var(--black)" />

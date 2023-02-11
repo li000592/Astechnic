@@ -8,9 +8,8 @@ export default function ReadyLearnMore() {
       <div className="contact-left">
         <h5>Ready to learn more?</h5>
         <p>
-          OnPoint is a portfolio of digital solutions that deliver enhanced
-          system performance through optimization technologies developed by
-          proven experts in your domain.
+          Astechnic is a portfolio of digital solutions that deliver enhanced system performance through optimization
+          technologies developed by proven experts in your domain.
         </p>
         <div style={{ padding: "20px" }}>
           <Link to={"/contact-us"}>

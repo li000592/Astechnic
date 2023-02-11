@@ -16,10 +16,10 @@ export default function TextSection({ title = "", body = "" }) {
           <Grid item xs={12} md={6}></Grid>
         </Grid>
       </section>
-      <div className="left-brick-container animate__animated animate__fadeInLeft">
+      {/* <div className="left-brick-container animate__animated animate__fadeInLeft">
         <div className="left-brick-brick"></div>
         <div className="left-brick-triangle" />
-      </div>
+      </div> */}
     </>
   );
 }

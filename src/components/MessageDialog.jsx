@@ -56,17 +56,17 @@ export default function MessageDialog({ isOpen, setIsOpen }) {
     <Dialog open={isOpen} onClose={handleClose}>
       <DialogTitle sx={{ backgroundColor: "var(--theme-color-1)" }}>Contact Us</DialogTitle>
       <DialogContent>
-        {emailFormList.map((i) =>
+        {emailFormList.map((i, index) =>
           i.key == "comment" ? (
-            <>
+            <div key={i.label + index}>
               <p style={{ marginBottom: 0, fontWeight: 400, fontSize: "12px", marginTop: "8px" }}>{i.label}</p>
               <TextareaAutosize minRows={3} style={{ width: "100%" }} />
-            </>
+            </div>
           ) : (
-            <>
+            <div key={i.label + index}>
               <p style={{ marginBottom: 0, fontWeight: 400, fontSize: "12px", marginTop: "8px" }}>{i.label}</p>
               <TextField sx={{ marginTop: "8px", width: "100%" }} id={i.key} type={i.inpuType || "text"} />
-            </>
+            </div>
           )
         )}
         <div style={{ display: "flex", justifyContent: "flex-end" }}></div>

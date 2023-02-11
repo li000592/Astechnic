@@ -9,14 +9,24 @@ export default function AboutMainBoard() {
       </div>
       <Suspense fallback={<>loading...</>}>
         <div className="video-container">
-          <video autoPlay muted loop id="about-video">
+          <video
+            preload="auto"
+            webkit-playsinline="true"
+            playsInline="playsinline"
+            type="application/x-mpegURL"
+            muted="muted"
+            loop=""
+            tabIndex="-1"
+            autoPlay="autoplay"
+            id="about-video"
+          >
             <source src={mainVideo} type="video/mp4" />
           </video>
         </div>
       </Suspense>
       <div className="about-main-content">
         <h1 className="about-video-title animate__animated animate__fadeInDown blue">
-          DIGITAL
+          COMBUSTION
           <br />
           SOLUTIONS,
         </h1>

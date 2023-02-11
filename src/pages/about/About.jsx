@@ -11,10 +11,12 @@ export default function About() {
       <AboutMainBoard />
       {/* <AboutIntro /> */}
       <TextSection
-        title="How we deliver."
-        body="OnPoint delivers results in a variety of industrial domains around the globe. The key to our proven performance is our unique combination of data-driven digital expertise and real-world, in-the-field industry experience. As part of Koch Engineered Solutions (KES), we bring a long history in refining and petrochemical markets, emission management, water treatment and other industrial applications to every project. We understand your industry, your challenges, and opportunities."
+        title="About Us"
+        body=" Astechnic is a high-tech enterprise in China. Astechnic has always been committed to becoming one of the professional combustion system integrators with comprehensive competitiveness in China. We can provide comprehensive combustion system solutions based on safety, energy saving and environmental protection, and supply complete combustion control product. With its professional R&D team and professional R&D test equipment, Astechnic at the forefront of the 
+        industry in terms of low-nitrogen combustion.
+        "
       />
-      <LearnMoreSection />
+      {/* <LearnMoreSection /> */}
       <ReadyLearnMore />
     </div>
   );

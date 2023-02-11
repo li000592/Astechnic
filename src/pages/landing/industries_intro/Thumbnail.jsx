@@ -1,6 +1,6 @@
 import Img1 from "../../../assets/images/thumbnail.webp";
 
-export default function Thumbnail({ category, index }) {
+export default function Thumbnail({ category, index, img }) {
 //  let seconds = 1;
 //   if ([0, 1, 4].includes(index)) seconds = 0;
 //   else seconds = 2;
@@ -8,7 +8,7 @@ export default function Thumbnail({ category, index }) {
     <>
       <img
         className={`thumb-img  animate__animated animate__fadeInBottomLeft`}
-        src={Img1}
+        src={img}
         alt=""
       />
       {/* <Box xs={{ backgroundColor: "grey"}}></Box> */}

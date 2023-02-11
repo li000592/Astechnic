@@ -7,26 +7,29 @@ const featuredContentList = [
   {
     product: "Zolo",
     title: "A-PRO Self-Preheating Burnern",
-    body: "A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces…A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces to allevia",
+    body: "The waste heat is recovered with its own heat exchanger, and the combustion-supporting air can be preheated up to 650 ℃. Modular design, each module can be replaced and maintained separately. Suitable for pulse control and continuous control. Staged combustion, combustion is more environmentally friendly. The electrode has its own cooling air protection circuit and has the functions of detection and ignition at the same time. Heat-resistant steel heat exchanger, suitable for a variety of heat treatment furnaces below.",
     type: "pdf",
-    download_path: "resources/A-PRO Self-Preheating Burner.pdf",
-    image_path: "",
+    download_path: "resources/pdf/A-PRO Self-Preheating Burner.pdf",
+    image_path: "resources/images/1.jpg",
   },
   {
     product: "Zolo",
     title: "A-RC Integrated Regenerative Burner",
-    body: "A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces…A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces to allevia",
+    body: "AME RC-Integrated Regenerative Burner breaks away from the basic concept of traditional regenerative combustion system: double burner + double regenerator structure. Due to the use of unique combustion and heat exchange technology, the dual heat storage, combustion and commutation system are integrated into an independent, highly integrated, high-tech and epoch-making regenerative burner.",
     type: "pdf",
-    download_path: "resources/A-RC Integrated Regenerative Burner.pdf",
+    download_path: "resources/pdf/A-RC Integrated Regenerative Burner.pdf",
+    image_path: "resources/images/3.jpg",
   },
   {
     product: "Zolo",
     title: "A-SHE Efficient Self-Preheating Burner",
-    body: "A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces…A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces to allevia",
+    body: "In order to further enhance the waste heat recovery capacity of flue gas and reduce fuel cost, it adds an auxiliary heat recovery system on the basis of the original finned casing primary heat exchanger, which increases the fuel efficiency to more than 90%, which is close to the level of regenerative heat recovery system. However, it has simpler structure, lower cost, less space and better maintenance performance. Therefore, compared with the regenerative burner, it has higher performance-to-price ratio.",
     type: "pdf",
-    download_path: "resources/A-SHE Efficient Self-Preheating Burner.pdf",
+    download_path: "resources/pdf/A-SHE Efficient Self-Preheating Burner.pdf",
+    image_path: "resources/images/2.jpg",
   },
 ];
+
 export default function FeaturedContent() {
   const [featuredContent, setFeaturedContent] = useState(featuredContentList);
   const featuredId = useId();

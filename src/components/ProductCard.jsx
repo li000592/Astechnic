@@ -29,18 +29,18 @@ export default function ProductCard({data}) {
         <CardMedia
           component="img"
           height="140"
-          image={CardImage}
+          image={data?.image_path ||  CardImage}
           alt="card-image"
         />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            {data.product}
+            {data?.product}
           </Typography>
           <Typography gutterBottom variant="h5" component="div" sx={{color: "var(--theme-color-1)", fontWeight: "800"}}>
-            {data.title}
+            {data?.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {data.body}
+            {data?.body}
           </Typography>
         </CardContent>
       </CardActionArea>

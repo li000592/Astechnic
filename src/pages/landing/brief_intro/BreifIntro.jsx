@@ -28,12 +28,12 @@ export default function BreifIntro() {
         <Grid xs={12} md={5} xl={3} className="animate__animated animate__fadeInLeft" item>
           <div style={{ alignSelf: "center" }}>
             <p className="intro-text">
-              Today, the expectation to operate at increasingly optimal levels using digital technology has never been
-              higher. That’s where we come in.
+              Today, the expectation to operate at increasingly optimal levels using industrial combustion has never
+              been higher. That’s where we come in.
             </p>
             <p className="intro-text">
-              OnPoint is a portfolio of digital solutions that delivers enhanced system performance through optimization
-              technologies developed by proven experts in your domain.
+              Astechnic is a portfolio of industrial Combustion that delivers enhanced system performance through
+              optimization technologies developed by proven experts in your domain.
             </p>
           </div>
         </Grid>

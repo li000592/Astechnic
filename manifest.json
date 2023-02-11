@@ -2,7 +2,7 @@
   "short_name": "Astechnic",
   "name": "Astechnic",
   "icons": [
-    { "src": "/src/assets/images/logo.png", "type": "image/png", "sizes": "192x192" }
+    { "src": "logo/logo.png", "type": "image/png", "sizes": "192x192" }
   ],
   "start_url": "/index.html",
   "display": "fullscreen"
