@@ -2694,7 +2694,7 @@ body.elementor-page #empty-page-frame section.elementor-section-full_width > .el
   footer#footer .left {
     width: 100%;
     float: none;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
 
   ul#menu-footer-menu li {

@@ -1,9 +1,15 @@
 #small-head {
   display: none;
-
 }
 .small-logo {
   width: 120px;
+}
+
+.header-container {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 @media (max-width: 700px) {

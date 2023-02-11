@@ -8,7 +8,7 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <div className="animate__animated animate__fadeInDown">
+    <div className="animate__animated animate__fadeInDown header-container">
       <nav id="navigation">
         <section
           id="big-head"
