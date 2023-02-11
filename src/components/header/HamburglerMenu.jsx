@@ -23,10 +23,7 @@ export default function TemporaryDrawer() {
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
-    if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
+    if (event.type === "keydown" && (event.key === "Tab" || event.key === "Shift")) {
       return;
     }
 
@@ -41,23 +38,18 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["About", "Resources", "Solutions", "Contact Us"].map(
-          (text, index) => (
-            <ListItem
-              key={text}
-              disablePadding
-            >
-              <Link to={"/" + text.replace(/\s/g, '').toLocaleLowerCase()} style={{textDecoration: "none"}}>
-                <ListItemButton>
-                  {/* <ListItemIcon>
+        {["About", "Resources", "Solutions", "Contact Us"].map((text, index) => (
+          <ListItem key={text} disablePadding>
+            <Link to={"/" + text.replace(/\s/g, "").toLocaleLowerCase()} style={{ textDecoration: "none" }}>
+              <ListItemButton>
+                {/* <ListItemIcon>
                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                   </ListItemIcon> */}
-                  <ListItemText primary={text}  />
-                </ListItemButton>
-              </Link>
-            </ListItem>
-          )
-        )}
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </Link>
+          </ListItem>
+        ))}
       </List>
       <Divider />
     </Box>
@@ -69,11 +61,7 @@ export default function TemporaryDrawer() {
         <IconButton onClick={toggleDrawer("right", true)}>
           <MenuIcon />
         </IconButton>
-        <Drawer
-          anchor={"right"}
-          open={state["right"]}
-          onClose={toggleDrawer("right", false)}
-        >
+        <Drawer anchor={"right"} open={state["right"]} onClose={toggleDrawer("right", false)} sx={{ zIndex: 9999 }}>
           {list("right")}
         </Drawer>
       </React.Fragment>
