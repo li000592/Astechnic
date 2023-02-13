@@ -14,33 +14,40 @@ let data = {
   type: "pdf",
 };
 
-export default function ProductCard({data}) {
-
+export default function ProductCard({ data, height = "500px" }) {
   const onClickDownload = () => {
     const link = document.createElement("a");
     link.download = data.download_path;
     link.href = `./${data.download_path}`;
     link.click();
-  }
+  };
 
   return (
-    <Card>
+    <Card
+      sx={{
+        height: height,
+        maxWidth: "400px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+      }}
+    >
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={data?.image_path ||  CardImage}
-          alt="card-image"
-        />
+        <CardMedia component="img" height="140" image={data?.image_path || CardImage} alt="card-image" />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
             {data?.product}
           </Typography>
-          <Typography gutterBottom variant="h5" component="div" sx={{color: "var(--theme-color-1)", fontWeight: "800"}}>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{ color: "var(--theme-color-1)", fontWeight: "800" }}
+          >
             {data?.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {data?.body}
+            {data?.body.length > 420 ? data?.body.slice(0, 420) + "..." : data?.body}
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -41,12 +41,12 @@ export default function MainBoard() {
         {isDisplay && <p className="video-text animate__animated animate__fadeInUp">We focus on combustion system.</p>}
       </div>
 
-      {isDisplay && (
+      {/* {isDisplay && (
         <div className="green-brick-container animate__animated animate__fadeInRight">
           <div className="green-brick"></div>
           <div className="green-brick-triangle" />
         </div>
-      )}
+      )} */}
 
       {isDisplay && (
         <div className="more-button-container ">

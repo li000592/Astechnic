@@ -143,21 +143,21 @@ export default function CardList() {
 
   return (
     <section style={{ marginTop: "32px" }}>
-      <Grid container>
+      {/* <Grid container>
         <Grid item xs={12} md={3}>
           <CardFilters />
-        </Grid>
+        </Grid> */}
 
-        <Grid item xs={12} md={9}>
+        {/* <Grid item xs={12} md={9}> */}
           <Grid container spacing={2}>
             {data.map((element, index) => (
-              <Grid item xs={12} md={6} xl={4}>
+              <Grid item xs={12} md={4} xl={4}>
                 <ProductCard data={element} key={listIds + index} />
               </Grid>
             ))}
           </Grid>
-        </Grid>
-      </Grid>
+        {/* </Grid> */}
+      {/* </Grid> */}
     </section>
   );
 }

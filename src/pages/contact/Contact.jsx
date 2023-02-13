@@ -31,15 +31,15 @@ export default function Contact() {
             <div className="interest-checkbox-group">
               <div>
                 <Checkbox />
-                <span>Zolo</span>
+                <span>Steel</span>
               </div>
               <div>
                 <Checkbox />
-                <span>Zolo</span>
+                <span>Metallurgy</span>
               </div>
               <div>
                 <Checkbox />
-                <span>Zolo</span>
+                <span>Glass</span>
               </div>
             </div>
           </div>

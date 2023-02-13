@@ -61,7 +61,7 @@ export default function Footer() {
               <li id="menu-item-225" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-225">
                 <a href="#">Copyright 2023.</a>
               </li>
-              <li id="menu-item-123" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-123">
+              {/* <li id="menu-item-123" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-123">
                 <a
                   target="_blank"
                   rel="noopener"
@@ -83,7 +83,7 @@ export default function Footer() {
               </li>
               <li id="menu-item-824" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-824">
                 <a href="https://acombustion.com/patents/">Patents</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

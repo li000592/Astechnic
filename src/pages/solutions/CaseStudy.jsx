@@ -39,7 +39,7 @@ export default function CaseStudy() {
           <Grid item xs={12} md={6} container spacing={2}>
             {caseList.map((i, index) => (
               <Grid item xs={12} md={6}>
-                <ProductCard data={i} key={index} />
+                <ProductCard data={i} key={index} height='600px' />
               </Grid>
             ))}
           </Grid>

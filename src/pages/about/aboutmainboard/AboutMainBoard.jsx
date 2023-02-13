@@ -36,10 +36,10 @@ export default function AboutMainBoard() {
           RESULTS.
         </h1>
       </div>
-      <div className="green-brick-container animate__animated animate__fadeInRight">
+      {/* <div className="green-brick-container animate__animated animate__fadeInRight">
         <div className="green-brick"></div>
         <div className="green-brick-triangle" />
-      </div>
+      </div> */}
     </div>
   );
 }
