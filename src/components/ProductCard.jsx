@@ -34,7 +34,7 @@ export default function ProductCard({ data, height = "500px" }) {
     >
       <CardActionArea>
         <CardMedia component="img" height="140" image={data?.image_path || CardImage} alt="card-image" />
-        <CardContent>
+        <CardContent style={{ paddingBottom: 0 }}>
           <Typography variant="body2" color="text.secondary">
             {data?.product}
           </Typography>
@@ -46,7 +46,7 @@ export default function ProductCard({ data, height = "500px" }) {
           >
             {data?.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" >
             {data?.body.length > 420 ? data?.body.slice(0, 420) + "..." : data?.body}
           </Typography>
         </CardContent>
