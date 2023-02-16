@@ -11,6 +11,7 @@ import Solution from "./pages/solutions/Solutions";
 import { useLocation } from "react-router-dom";
 import LeaveMessage from "./components/LeaveMessage";
 import MessageDialog from "./components/MessageDialog";
+import FOF from "./pages/error/FOF";
 
 function App() {
   const { pathname } = useLocation();
@@ -34,7 +35,7 @@ function App() {
         <Route path="/resources" element={<Resources />}></Route>
         <Route path="/solutions" element={<Solution />}></Route>
         <Route path="/contactus" element={<Contact />}></Route>
-        <Route path="*" element={<>404 Page</>}></Route>
+        <Route path="*" element={<FOF/>}></Route>
       </Routes>
       {isMessageDialogOpen && <MessageDialog isOpen={isMessageDialogOpen} setIsOpen={setIsMessageDialogOpen} />}
       {!pathname.includes("contact") && <LeaveMessage openDialog={() => setIsMessageDialogOpen(true)} />}
