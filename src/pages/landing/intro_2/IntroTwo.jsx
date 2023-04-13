@@ -4,7 +4,7 @@ export default function IntroTwo() {
     <section className="intro-two">
       <div className="two-right-container intro-two-container-1">
         <div className="two-title">
-          INDUSTRIAL COMBUSTION SOLUTIONS<br></br>FOR YOUR INDUSTRY.
+          INDUSTRIAL COMBUSTION<br></br>FOR YOUR INDUSTRY.
         </div>
         <div className="two-body">
           Astechinic digital solutions deliver advanced, actionable insights to help operators identify root causes,
