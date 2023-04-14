@@ -12,6 +12,9 @@ const contactFormElements = [
   { label: "Interest Area", key: "area", type: "checkbox" },
   { label: "Please Leave a Message", key: "message", type: "TextField" },
 ];
+
+const interestAreaList = ["steel", "heat treatement", "aluminum", "other"];
+
 export default function Contact() {
   const formRender = (element) => {
     let formElement;
@@ -29,18 +32,12 @@ export default function Contact() {
           <div className="input-container">
             <p>{element.label}</p>
             <div className="interest-checkbox-group">
-              <div>
-                <Checkbox />
-                <span>Steel</span>
-              </div>
-              <div>
-                <Checkbox />
-                <span>Metallurgy</span>
-              </div>
-              <div>
-                <Checkbox />
-                <span>Glass</span>
-              </div>
+              {interestAreaList.map((areaString) => (
+                <div key={areaString}>
+                  <Checkbox key={areaString} />
+                  <span>{capitalizeFirstLetter(areaString)}</span>
+                </div>
+              ))}
             </div>
           </div>
         );
@@ -75,4 +72,8 @@ export default function Contact() {
       </Grid>
     </Grid>
   );
+}
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }

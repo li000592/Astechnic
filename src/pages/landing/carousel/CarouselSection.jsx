@@ -14,9 +14,9 @@ const textList = [
   },
 ];
 
-export default function CarouselSection() {
+export default function CarouselSection(anmation = "fade") {
   return (
-    <Carousel animation="fade" navButtonsAlwaysVisible autoPlay={false}>
+    <Carousel animation={anmation} navButtonsAlwaysVisible autoPlay={false}>
       {textList.map((item, i) => (
         <Paper key={`test3-item-${i}`} elevation={10} style={{ height: 350 }} className="HeightItem carousel-container">
           <div className="carousel-body-container">

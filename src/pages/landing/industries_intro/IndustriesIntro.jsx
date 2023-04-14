@@ -8,29 +8,46 @@ const serviesList = [
     img: "thumbnails/steel.png",
   },
   {
-    label: "Metallurgy",
-    img: "thumbnails/metallurgy.png",
-  },
-  {
     label: "Heat treatment",
     img: "thumbnails/heat treatment.png",
   },
   {
-    label: "Ceramics",
+    label: "Aluminum",
+    img: "thumbnails/steel.png",
+  },
+  {
+    label: "Chemical",
+    img: "thumbnails/metallurgy.png",
+  },
+  {
+    label: "Coal chemical",
+    img: "thumbnails/heat treatment.png",
+  },
+  {
+    label: "Food",
     img: "thumbnails/ceramics.png",
+  },
+  {
+    label: "Ceramic Sanitary-Ware",
+    img: "thumbnails/manufacturing.png",
+  },
+  {
+    label: "Building Ceramics",
+    img: "thumbnails/manufacturing.png",
+  },
+  {
+    label: "New Energy",
+    img: "thumbnails/manufacturing.png",
   },
   {
     label: "Textile",
     img: "thumbnails/textile.png",
   },
   {
-    label: "Glass",
+    label: "Porcelain Enamel",
     img: "thumbnails/glass.png",
   },
-  {
-    label: "Manufacturing",
-    img: "thumbnails/manufacturing.png",
-  },
+
 ];
 
 export default function IndustriesIntro() {
