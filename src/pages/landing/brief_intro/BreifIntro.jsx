@@ -41,7 +41,7 @@ export default function BreifIntro() {
           </div>
         </Grid>
       )}
-      <Grid xs={12} md={7} xl={9} item>
+      <Grid xs={12} md={7} xl={9} item style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
         <Grid container spacing={1}>
           {animationTimer > 1000 && (
             <Grid xs={4} item className="animate__animated  animate__fadeInDown">
