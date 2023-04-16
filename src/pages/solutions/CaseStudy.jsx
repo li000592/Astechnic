@@ -38,8 +38,8 @@ export default function CaseStudy() {
           </Grid>
           <Grid item xs={12} md={6} container spacing={2}>
             {caseList.map((i, index) => (
-              <Grid item xs={12} md={6}>
-                <ProductCard data={i} key={index} height='600px' />
+              <Grid item xs={12} md={6} key={index}>
+                <ProductCard data={i} height="600px" />
               </Grid>
             ))}
           </Grid>

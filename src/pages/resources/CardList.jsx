@@ -148,15 +148,15 @@ export default function CardList() {
           <CardFilters />
         </Grid> */}
 
-        {/* <Grid item xs={12} md={9}> */}
-          <Grid container spacing={2}>
-            {data.map((element, index) => (
-              <Grid item xs={12} md={4} xl={4}>
-                <ProductCard data={element} key={listIds + index} />
-              </Grid>
-            ))}
+      {/* <Grid item xs={12} md={9}> */}
+      <Grid container spacing={2}>
+        {data.map((element, index) => (
+          <Grid item xs={12} md={4} xl={4} key={listIds + index}>
+            <ProductCard data={element} />
           </Grid>
-        {/* </Grid> */}
+        ))}
+      </Grid>
+      {/* </Grid> */}
       {/* </Grid> */}
     </section>
   );
