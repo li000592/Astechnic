@@ -2,52 +2,70 @@ import { Grid } from "@mui/material";
 import Thumbnail from "./Thumbnail";
 import "./IndustriesIntro.css";
 
+import image1_1 from "../../../assets/images/landing/1-1.jpg";
+import image1_2 from "../../../assets/images/landing/1-2.jpg";
+import image1_3 from "../../../assets/images/landing/1-3.jpg";
+import image2_1 from "../../../assets/images/landing/2-1.jpg";
+import image2_2 from "../../../assets/images/landing/2-2.jpg";
+import image2_3 from "../../../assets/images/landing/2-3.jpg";
+import image2_4 from "../../../assets/images/landing/2-4.jpg";
+import image3_1 from "../../../assets/images/landing/3-1.jpg";
+import image3_2 from "../../../assets/images/landing/3-2.jpg";
+import image3_3 from "../../../assets/images/landing/3-3.jpg";
+import image4_1 from "../../../assets/images/landing/4-1.jpg";
+import image5_1 from "../../../assets/images/landing/5-1.jpg";
+import image6_1 from "../../../assets/images/landing/6-1.jpg";
+import image7_1 from "../../../assets/images/landing/7-1.jpg";
+import image8_1 from "../../../assets/images/landing/8-1.jpg";
+import image9_1 from "../../../assets/images/landing/9-1.jpg";
+import image10_1 from "../../../assets/images/landing/10-1.jpg";
+import image11_1 from "../../../assets/images/landing/11-1.jpg";
+
 const serviesList = [
   {
     label: "Steel",
-    img: "thumbnails/steel.png",
+    imageList: [image1_1, image1_2, image1_3],
   },
   {
     label: "Heat treatment",
-    img: "thumbnails/heat treatment.png",
+    imageList: [image2_1, image2_2, image2_3, image2_4],
   },
   {
     label: "Aluminum",
-    img: "thumbnails/steel.png",
+    imageList: [image3_1, image3_2, image3_3],
   },
   {
     label: "Chemical",
-    img: "thumbnails/metallurgy.png",
+    imageList: [image4_1],
   },
   {
     label: "Coal chemical",
-    img: "thumbnails/heat treatment.png",
+    imageList: [image5_1],
   },
   {
     label: "Food",
-    img: "thumbnails/ceramics.png",
+    imageList: [image6_1],
   },
   {
     label: "Ceramic Sanitary-Ware",
-    img: "thumbnails/manufacturing.png",
+    imageList: [image7_1],
   },
   {
     label: "Building Ceramics",
-    img: "thumbnails/manufacturing.png",
+    imageList: [image8_1],
   },
   {
     label: "New Energy",
-    img: "thumbnails/manufacturing.png",
+    imageList: [image9_1],
   },
   {
     label: "Textile",
-    img: "thumbnails/textile.png",
+    imageList: [image10_1],
   },
   {
     label: "Porcelain Enamel",
-    img: "thumbnails/glass.png",
+    imageList: [image11_1],
   },
-
 ];
 
 export default function IndustriesIntro() {
@@ -57,7 +75,7 @@ export default function IndustriesIntro() {
       <Grid container spacing={2} style={{ justifyContent: "center" }}>
         {serviesList.map((category, index) => (
           <Grid xs={12} md={3} item key={category.label + index}>
-            <Thumbnail category={category.label} img={category.img} index={index} />
+            <Thumbnail category={category.label} imageList={category.imageList} index={index} />
           </Grid>
         ))}
       </Grid>
