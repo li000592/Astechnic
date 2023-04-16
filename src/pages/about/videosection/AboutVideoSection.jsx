@@ -34,7 +34,7 @@ function AboutVideoSection() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe> */}
-            <ReactPlayer playing url="https://www.youtube.com/embed/KTicL5nvKmg" width="100%" muted  />
+            <ReactPlayer controls playing url="https://www.youtube.com/embed/KTicL5nvKmg" width="100%" muted  />
           </div>
         </Grid>
         <Grid item xs={12} md={6}>
