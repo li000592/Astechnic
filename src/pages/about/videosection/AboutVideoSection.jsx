@@ -5,13 +5,28 @@ import ReactPlayer from "react-player";
 import { useRef } from "react";
 
 function AboutVideoSection() {
-  const videoContainerRef = useRef(null)
+  const videoContainerRef = useRef(null);
   console.log(videoContainerRef.current?.offsetWidth);
+  const [videoHeight, setVideoHeight] = React.useState("100%");
+
+  React.useEffect(() => {
+    const height = document.querySelector(".html5-main-video")?.offsetHeight;
+    if (height) setVideoHeight(document.querySelector(".html5-main-video")?.offsetHeight);
+    console.log(height);
+  }, [document.querySelector(".html5-main-video")?.offsetHeight]);
+  setTimeout(() => {
+    setVideoHeight(document.querySelector(".html5-main-video")?.offsetHeight);
+    console.log("123", document.querySelector(".html5-main-video")?.offsetHeight);
+  }, 2000);
   return (
     <section>
       <Grid container>
         <Grid item xs={12} md={6}>
-          <div className="text-section-container" ref={videoContainerRef}>
+          <div
+            className="text-section-container"
+            ref={videoContainerRef}
+            style={{ height: "100%", display: "flex", alignItems: "center" }}
+          >
             {/* <video
               preload="auto"
               webkit-playsinline="true"
@@ -34,7 +49,7 @@ function AboutVideoSection() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe> */}
-            <ReactPlayer controls playing url="https://www.youtube.com/embed/KTicL5nvKmg" width="100%" muted  />
+            <ReactPlayer controls playing url="https://youtu.be/VKicb72mE7k" width="100%" height={videoHeight} muted />
           </div>
         </Grid>
         <Grid item xs={12} md={6}>
