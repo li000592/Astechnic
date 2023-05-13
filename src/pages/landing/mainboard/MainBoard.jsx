@@ -32,13 +32,13 @@ export default function MainBoard() {
 
       <div className="content">
         {isDisplay && (
-          <h1 className="video-title animate__animated animate__fadeInDown">industrial combustion solutions</h1>
+          <h1 className="video-title animate__animated animate__fadeInDown">industrial combustion</h1>
         )}
 
         <div className="line-container animate__animated animate__rotateInDownLeft">
           <div className="video-line "></div>
         </div>
-        {isDisplay && <p className="video-text animate__animated animate__fadeInUp">We focus on combustion system.</p>}
+        {isDisplay && <p className="video-text animate__animated animate__fadeInUp">We focus on combustion.</p>}
       </div>
 
       {/* {isDisplay && (

@@ -48,7 +48,7 @@ export default function FeaturedContent() {
             <div className="featured-right">
               <Grid container spacing={3}>
                 {featuredContent.map((i, index) => (
-                  <Grid item xs={12} md={6} xl={4}>
+                  <Grid item xs={12} md={6} xl={4} key={featuredId + index}>
                     <ProductCard data={i} key={featuredId + index} />
                   </Grid>
                 ))}
