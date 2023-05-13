@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Grid } from "@mui/material";
 import { useId } from "react";
 import ProductCard from "../../components/ProductCard";
@@ -104,60 +104,93 @@ const resourcesList = [
     download_path: "resources/pdf/ANX-CM Burner.pdf",
     image_path: "resources/images/6.png",
   },
-  // {
-  //   product: "Zolo",
-  //   title: "AST-40 Ignition Burner",
-  //   body: "A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces…A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces to allevia",
-  //   type: "pdf",
-  //   download_path: "resources/pdf/AST-40 Ignition Burner.pdf",
-  //   image_path: "",
-  // },
-  // {
-  //   product: "Zolo",
-  //   title: "AT 50 Electric Actuator",
-  //   body: "A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces…A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces to allevia",
-  //   type: "pdf",
-  //   download_path: "resources/pdf/AT 50 Electric Actuator.pdf",
-  //   image_path: "",
-  // },
-  // {
-  //   product: "Zolo",
-  //   title: "AT-08 Ignition Transformer",
-  //   body: "A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces…A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces to allevia",
-  //   type: "pdf",
-  //   download_path: "resources/pdf/AT-08 Ignition Transformer.pdf",
-  //   image_path: "",
-  // },
-  // {
-  //   product: "Zolo",
-  //   title: "AT31 Electric Actuator",
-  //   body: "A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces…A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces to allevia",
-  //   type: "pdf",
-  //   download_path: "resources/pdf/AT31 Electric Actuator.pdf",
-  //   image_path: "",
-  // },
+  {
+    product: "Zolo",
+    title: "AST-40 Ignition Burner",
+    body: "A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces…A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces to allevia",
+    type: "pdf",
+    download_path: "resources/pdf/AST-40 Ignition Burner.pdf",
+    image_path: "",
+  },
+  {
+    product: "Zolo",
+    title: "AT 50 Electric Actuator",
+    body: "A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces…A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces to allevia",
+    type: "pdf",
+    download_path: "resources/pdf/AT 50 Electric Actuator.pdf",
+    image_path: "",
+  },
+  {
+    product: "Zolo",
+    title: "AT-08 Ignition Transformer",
+    body: "A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces…A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces to allevia",
+    type: "pdf",
+    download_path: "resources/pdf/AT-08 Ignition Transformer.pdf",
+    image_path: "",
+  },
+  {
+    product: "Zolo",
+    title: "AT31 Electric Actuator",
+    body: "A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces…A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces to allevia",
+    type: "pdf",
+    download_path: "resources/pdf/AT31 Electric Actuator.pdf",
+    image_path: "",
+  },
 ];
 export default function CardList() {
   const [data, setData] = useState(resourcesList);
+  const [displayData, setDisplayData] = useState(data.slice(0,9));
+  const [dataFilter, setDataFilter] = useState({
+    displayNumber: 9,
+    type: "all",
+  });
   const listIds = useId();
 
+  // useEffect(() => {
+  //   setDisplayData(data.slice(0, 9));
+  //   setDataFilter({
+  //     displayNumber: 9,
+  //     type: "all",
+  //   });
+  // }, []);
+  console.log(dataFilter);
+  useEffect(() => {
+    window.onscroll = function (ev) {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        // you're at the bottom of the page, load more content here.
+        
+        setDataFilter((obj) => {
+          return { ...obj, displayNumber: obj.displayNumber + 6 };
+        });
+        setDisplayData((oldData) => {
+          console.log("running");
+          let copyData = data;
+          if (dataFilter.type !== "all")
+            copyData.filter((card) => card.product === type)
+            
+          return copyData.slice(0, dataFilter.displayNumber + 6)
+        });
+      }
+    };
+  }, []);
+  console.log(displayData);
   return (
     <section style={{ marginTop: "32px" }}>
-      {/* <Grid container>
+      <Grid container>
         <Grid item xs={12} md={3}>
           <CardFilters />
-        </Grid> */}
+        </Grid>
 
-        {/* <Grid item xs={12} md={9}> */}
+        <Grid item xs={12} md={9}>
           <Grid container spacing={2}>
-            {data.map((element, index) => (
-              <Grid item xs={12} md={4} xl={4}>
+            {displayData.map((element, index) => (
+              <Grid item xs={12} md={4} xl={4} key={listIds + index}>
                 <ProductCard data={element} key={listIds + index} />
               </Grid>
             ))}
           </Grid>
-        {/* </Grid> */}
-      {/* </Grid> */}
+        </Grid>
+      </Grid>
     </section>
   );
 }

@@ -8,7 +8,7 @@ export default function Resources() {
   return (
     <>
       <PageBanner title="Resources" />
-      <FeaturedContent />
+      {/* <FeaturedContent /> */}
       <CardList />
       <ReadyLearnMore />
     </>

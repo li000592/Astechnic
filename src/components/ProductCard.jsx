@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
+import { Button, CardActionArea, CardActions, Chip } from "@mui/material";
 import CardImage from "../assets/images/card-image1.jpg";
 import "./ProductCard.css";
 
@@ -14,7 +14,7 @@ let data = {
   type: "pdf",
 };
 
-export default function ProductCard({ data, height = "500px" }) {
+export default function ProductCard({ data, height = "320px" }) {
   const onClickDownload = () => {
     const link = document.createElement("a");
     link.download = data.download_path;
@@ -32,28 +32,40 @@ export default function ProductCard({ data, height = "500px" }) {
         justifyContent: "space-between",
       }}
     >
-      <CardActionArea>
-        <CardMedia component="img" height="140" image={data?.image_path || CardImage} alt="card-image" />
+      {/* <CardActionArea> */}
+      <div>
+        <CardMedia
+          component="img"
+          height="140"
+          image={data?.image_path || CardImage}
+          alt="card-image"
+        />
         <CardContent style={{ paddingBottom: 0 }}>
-          <Typography variant="body2" color="text.secondary">
+          {/* <Typography variant="body" color="text.secondary">
             {data?.product}
-          </Typography>
+          </Typography> */}
+          <Chip label={data.product} sx={{ marginBottom: "4px" }} />
           <Typography
             gutterBottom
             variant="h5"
             component="div"
-            sx={{ color: "var(--theme-color-1)", fontWeight: "800" }}
+            sx={{
+              color: "var(--theme-color-1)",
+              fontWeight: "700",
+              fontSize: "1.2rem",
+            }}
           >
             {data?.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary" >
+          {/* <Typography variant="body2" color="text.secondary" >
             {data?.body.length > 420 ? data?.body.slice(0, 420) + "..." : data?.body}
-          </Typography>
+          </Typography> */}
         </CardContent>
-      </CardActionArea>
+        {/* </CardActionArea> */}
+      </div>
       <CardActions>
         <Button size="small" color="primary" onClick={onClickDownload}>
-          {data.type == "pdf" && "DOWNLOAD CASE STUDY"}
+          {data.type == "pdf" && "DOWNLOAD"}
         </Button>
       </CardActions>
     </Card>
