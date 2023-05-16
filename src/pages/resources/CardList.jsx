@@ -26,19 +26,24 @@ export default function CardList() {
   );
   const [dataFilter, setDataFilter] = useState({
     displayNumber: 12,
-    displayType: ["Burner", "Electronic Controls", "Industrial burners", "Valves"],
+    displayType: "all",
+    status: "idle",
   });
 
   useEffect(() => {
     if (dataFilter.status === "rerender") {
-      const updatedDataFilter = { ...dataFilter, displayNumber: dataFilter.displayNumber + 12 };
+      const updatedDataFilter = { ...dataFilter, displayNumber: dataFilter.displayNumber + 12, status: "idle" };
       setDataFilter(updatedDataFilter);
       setDisplayData((oldData) => {
         const eachTypeNumber = 12 / dataFilter.displayType.length;
         const fetchTimes = updatedDataFilter.displayNumber / 12;
         const sliceNumber = eachTypeNumber * fetchTimes;
 
-        return dataFilter.displayType.reduce(
+        return (
+          dataFilter.displayType === "all"
+            ? ["Burner", "Electronic Controls", "Industrial burners", "Valves"]
+            : dataFilter.displayType
+        ).reduce(
           (accumulator, currentType) => [
             ...accumulator,
             ...data[currentType].slice(0, sliceNumber).map((fileName) => {
@@ -55,18 +60,23 @@ export default function CardList() {
   const listIds = useId();
 
   CardList.displayName = "cardlist";
+
   useEffect(() => {
     if (isVisible && displayData.length < 78) {
       setListStatus("loading");
       setTimeout(() => {
-        const updatedDataFilter = { ...dataFilter, displayNumber: dataFilter.displayNumber + 12 };
+        const updatedDataFilter = { ...dataFilter, displayNumber: dataFilter.displayNumber + 12, status: "idle" };
         setDataFilter(updatedDataFilter);
         setDisplayData((oldData) => {
           const eachTypeNumber = 12 / dataFilter.displayType.length;
           const fetchTimes = updatedDataFilter.displayNumber / 12;
           const sliceNumber = eachTypeNumber * fetchTimes;
 
-          return dataFilter.displayType.reduce(
+          return (
+            dataFilter.displayType === "all"
+              ? ["Burner", "Electronic Controls", "Industrial burners", "Valves"]
+              : dataFilter.displayType
+          ).reduce(
             (accumulator, currentType) => [
               ...accumulator,
               ...data[currentType].slice(0, sliceNumber).map((fileName) => {
@@ -82,7 +92,6 @@ export default function CardList() {
       setListStatus("full");
     }
   }, [isVisible]);
-  console.log(isVisible);
 
   return (
     <>

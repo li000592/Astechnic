@@ -7,7 +7,7 @@ import { Button, CardActionArea, CardActions, Chip } from "@mui/material";
 import CardImage from "../assets/images/card-image1.jpg";
 import "./ProductCard.css";
 
-export default function ProductCard({ data, height = "300px" }) {
+export default function ProductCard({ data, height = "475px" }) {
   const onClickDownload = () => {
     const link = document.createElement("a");
     link.download = `${data.fileName}.pdf`;
@@ -19,7 +19,7 @@ export default function ProductCard({ data, height = "300px" }) {
     <Card
       sx={{
         height: height,
-        maxWidth: "400px",
+        maxWidth: "450px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -29,7 +29,7 @@ export default function ProductCard({ data, height = "300px" }) {
       <div>
         <CardMedia
           component="img"
-          height="140"
+          height="325"
           image={
             `/resources/${data.type}/${data?.fileName}/${data?.fileName}.${
               data.type === "Electronic Controls" ? "jpg" : "png"

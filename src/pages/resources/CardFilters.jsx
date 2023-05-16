@@ -52,21 +52,24 @@ function Row(props) {
                       <TableCell align="right">
                         <Checkbox
                           name={type}
-                          checked={!dataFilter.displayType.includes(type)}
+                          checked={dataFilter.displayType.includes(type)}
                           onClick={(ev) => {
-                            console.log("clicked");
                             const { checked, name } = ev.target;
                             if (checked) {
                               setDataFilter((obj) => {
                                 return {
-                                  ...obj,
-                                  displayType: obj.displayType.filter((type) => type !== name),
+                                  displayNumber: 12,
+                                  displayType: obj.displayType === "all" ? [name] : [...obj.displayType, name],
                                   status: "rerender",
                                 };
                               });
                             } else {
                               setDataFilter((obj) => {
-                                return { ...obj, displayType: [...obj.displayType, name], status: "rerender" };
+                                return {
+                                  displayNumber: 12,
+                                  displayType: obj.displayType.filter((type) => type !== name),
+                                  status: "rerender",
+                                };
                               });
                             }
                           }}
@@ -102,8 +105,8 @@ function CollapsibleTable({ dataFilter, setDataFilter }) {
                 onClick={() => {
                   setDataFilter({
                     displayNumber: 12,
-                    displayType: ["Burner", "Electronic Controls", "Industrial burners", "Valves"],
-                    status: "rerender"
+                    displayType: "all",
+                    status: "rerender",
                   });
                 }}
               >
