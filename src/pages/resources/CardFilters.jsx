@@ -13,47 +13,27 @@ import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import { Button, Radio } from "@mui/material";
+import { Button, Checkbox, Radio } from "@mui/material";
 
-function createData(name, calories, fat, carbs, protein, price) {
+function createData(name, type) {
   return {
     name,
-    calories,
-    fat,
-    carbs,
-    protein,
-    price,
-    history: [
-      {
-        date: "Steel",
-        customerId: "11091700",
-        amount: 3,
-      },
-      {
-        date: "Refining",
-        customerId: "Anonymous",
-        amount: 1,
-      },
-    ],
+    type,
   };
 }
 
 function Row(props) {
-  const { row } = props;
+  const { row, dataFilter, setDataFilter } = props;
   const [open, setOpen] = React.useState(true);
 
   return (
     <>
       <TableRow sx={{ "& > *": { borderBottom: "unset" } }}>
-        <TableCell component="th" scope="row" sx={{ color: "var(--theme-color-3)", fontWeight: 600}}>
+        <TableCell component="th" scope="row" sx={{ color: "var(--theme-color-3)", fontWeight: 600 }}>
           {row.name}
         </TableCell>
         <TableCell align="right">
-          <IconButton
-            aria-label="expand row"
-            size="small"
-            onClick={() => setOpen(!open)}
-          >
+          <IconButton aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
           </IconButton>
         </TableCell>
@@ -64,13 +44,33 @@ function Row(props) {
             <Box>
               <Table size="small">
                 <TableBody>
-                  {row.history.map((historyRow) => (
-                    <TableRow key={historyRow.date} xs={{ "& > *": { borderBottom: "unset" } }}>
+                  {row.type.map((type) => (
+                    <TableRow key={type} xs={{ "& > *": { borderBottom: "unset" } }}>
                       <TableCell component="th" scope="row">
-                        {historyRow.date}
+                        {type}
                       </TableCell>
                       <TableCell align="right">
-                        <Radio></Radio>
+                        <Checkbox
+                          name={type}
+                          checked={!dataFilter.displayType.includes(type)}
+                          onClick={(ev) => {
+                            console.log("clicked");
+                            const { checked, name } = ev.target;
+                            if (checked) {
+                              setDataFilter((obj) => {
+                                return {
+                                  ...obj,
+                                  displayType: obj.displayType.filter((type) => type !== name),
+                                  status: "rerender",
+                                };
+                              });
+                            } else {
+                              setDataFilter((obj) => {
+                                return { ...obj, displayType: [...obj.displayType, name], status: "rerender" };
+                              });
+                            }
+                          }}
+                        ></Checkbox>
                       </TableCell>
                     </TableRow>
                   ))}
@@ -85,34 +85,46 @@ function Row(props) {
 }
 
 const rows = [
-  createData("Industry", ["Steel", "Refining", "Power Generation"]),
-  createData("Product", ["Steel", "Refining", "Power Generation"]),
-  createData("Content Type", ["Steel", "Refining", "Power Generation"]),
+  // createData("Industry", ["Steel", "Refining", "Power Generation"]),
+  // createData("Product", ["Steel", "Refining", "Power Generation"]),
+  createData("Content Type", ["Burner", "Electronic Controls", "Industrial burners", "Valves"]),
 ];
 
-function CollapsibleTable() {
+function CollapsibleTable({ dataFilter, setDataFilter }) {
   return (
     <TableContainer component={Paper}>
       <Table aria-label="collapsible table">
         <TableHead>
           <TableRow>
             <TableCell>Search</TableCell>
-            <TableCell align="right"><Button>Reset</Button></TableCell>
+            <TableCell align="right">
+              <Button
+                onClick={() => {
+                  setDataFilter({
+                    displayNumber: 12,
+                    displayType: ["Burner", "Electronic Controls", "Industrial burners", "Valves"],
+                    status: "rerender"
+                  });
+                }}
+              >
+                Reset
+              </Button>
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
-            <Row key={row.name} row={row} />
+          {rows.map((row, indx) => (
+            <Row dataFilter={dataFilter} setDataFilter={setDataFilter} key={row + indx} row={row} />
           ))}
         </TableBody>
       </Table>
     </TableContainer>
   );
 }
-export default function CardFilters() {
+export default function CardFilters({ dataFilter, setDataFilter }) {
   return (
-    <div style={{ marginRight: "24px"}}>
-      <CollapsibleTable />
+    <div style={{ maxWidth: "400px" }}>
+      <CollapsibleTable dataFilter={dataFilter} setDataFilter={setDataFilter} />
     </div>
   );
 }

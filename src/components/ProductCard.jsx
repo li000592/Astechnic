@@ -7,18 +7,11 @@ import { Button, CardActionArea, CardActions, Chip } from "@mui/material";
 import CardImage from "../assets/images/card-image1.jpg";
 import "./ProductCard.css";
 
-let data = {
-  product: "Zolo",
-  title: "Ethylene Cracker Optimization",
-  body: "A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces…A major ethylene producer benefited over $1MM in the first year by installing Ember on 7 furnaces to allevia",
-  type: "pdf",
-};
-
-export default function ProductCard({ data, height = "320px" }) {
+export default function ProductCard({ data, height = "300px" }) {
   const onClickDownload = () => {
     const link = document.createElement("a");
-    link.download = data.download_path;
-    link.href = `./${data.download_path}`;
+    link.download = `${data.fileName}.pdf`;
+    link.href = `/resources/${data.type}/${data?.fileName}/${data?.fileName}.pdf`;
     link.click();
   };
 
@@ -37,14 +30,18 @@ export default function ProductCard({ data, height = "320px" }) {
         <CardMedia
           component="img"
           height="140"
-          image={data?.image_path || CardImage}
+          image={
+            `/resources/${data.type}/${data?.fileName}/${data?.fileName}.${
+              data.type === "Electronic Controls" ? "jpg" : "png"
+            }` || `/resources/${data.type}/${data?.fileName}/${data?.fileName}.jpg`
+          }
           alt="card-image"
         />
         <CardContent style={{ paddingBottom: 0 }}>
           {/* <Typography variant="body" color="text.secondary">
             {data?.product}
           </Typography> */}
-          <Chip label={data.product} sx={{ marginBottom: "4px" }} />
+          <Chip label={data.type} sx={{ marginBottom: "4px" }} />
           <Typography
             gutterBottom
             variant="h5"
@@ -55,7 +52,7 @@ export default function ProductCard({ data, height = "320px" }) {
               fontSize: "1.2rem",
             }}
           >
-            {data?.title}
+            {data?.fileName}
           </Typography>
           {/* <Typography variant="body2" color="text.secondary" >
             {data?.body.length > 420 ? data?.body.slice(0, 420) + "..." : data?.body}
@@ -65,7 +62,7 @@ export default function ProductCard({ data, height = "320px" }) {
       </div>
       <CardActions>
         <Button size="small" color="primary" onClick={onClickDownload}>
-          {data.type == "pdf" && "DOWNLOAD"}
+          DOWNLOAD
         </Button>
       </CardActions>
     </Card>
