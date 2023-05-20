@@ -26,7 +26,7 @@ export default function CardList() {
   );
   const [dataFilter, setDataFilter] = useState({
     displayNumber: 12,
-    displayType:["Industrial burners"],
+    displayType: ["Industrial burners"],
     status: "idle",
   });
 
@@ -110,6 +110,19 @@ export default function CardList() {
                   </Suspense>
                 </Grid>
               ))}
+              {!displayData.length && (
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "100%",
+                    height: "150px",
+                  }}
+                >
+                  <p>Please select the content types </p>
+                </div>
+              )}
             </Grid>
           </Grid>
         </Grid>
