@@ -90,7 +90,7 @@ function Row(props) {
 const rows = [
   // createData("Industry", ["Steel", "Refining", "Power Generation"]),
   // createData("Product", ["Steel", "Refining", "Power Generation"]),
-  createData("Content Type", ["Burner", "Electronic Controls", "Industrial burners", "Valves"]),
+  createData("Content Type", ["Industrial burners", "Valves", "Electronic Controls", "Burner"]),
 ];
 
 function CollapsibleTable({ dataFilter, setDataFilter }) {
@@ -105,7 +105,7 @@ function CollapsibleTable({ dataFilter, setDataFilter }) {
                 onClick={() => {
                   setDataFilter({
                     displayNumber: 12,
-                    displayType: "all",
+                    displayType: ["Industrial burners"],
                     status: "rerender",
                   });
                 }}

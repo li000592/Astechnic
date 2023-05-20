@@ -5,13 +5,15 @@ import "./IndustriesIntro.css";
 import image1_1 from "../../../assets/images/landing/1-1.jpg";
 import image1_2 from "../../../assets/images/landing/1-2.jpg";
 import image1_3 from "../../../assets/images/landing/1-3.jpg";
+import image1_4 from "../../../assets/images/landing/1-4.jpg";
 import image2_1 from "../../../assets/images/landing/2-1.jpg";
 import image2_2 from "../../../assets/images/landing/2-2.jpg";
 import image2_3 from "../../../assets/images/landing/2-3.jpg";
-import image2_4 from "../../../assets/images/landing/2-4.jpg";
+
 import image3_1 from "../../../assets/images/landing/3-1.jpg";
 import image3_2 from "../../../assets/images/landing/3-2.jpg";
 import image3_3 from "../../../assets/images/landing/3-3.jpg";
+import image3_4 from "../../../assets/images/landing/3-4.jpg";
 import image4_1 from "../../../assets/images/landing/4-1.jpg";
 import image5_1 from "../../../assets/images/landing/5-1.jpg";
 import image6_1 from "../../../assets/images/landing/6-1.jpg";
@@ -24,15 +26,15 @@ import image11_1 from "../../../assets/images/landing/11-1.jpg";
 const serviesList = [
   {
     label: "Steel",
-    imageList: [image1_1, image1_2, image1_3],
+    imageList: [image1_1, image1_2, image1_3, image1_4],
   },
   {
     label: "Heat treatment",
-    imageList: [image2_1, image2_2, image2_3, image2_4],
+    imageList: [image2_1, image2_2, image2_3],
   },
   {
-    label: "Aluminum",
-    imageList: [image3_1, image3_2, image3_3],
+    label: "Non-ferrous metals industry",
+    imageList: [image3_1, image3_2, image3_3, image3_4],
   },
   {
     label: "Chemical",

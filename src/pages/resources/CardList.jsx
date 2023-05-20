@@ -14,7 +14,7 @@ export default function CardList() {
   const isVisible = useOnScreen(cardListEnd);
   const [listStatus, setListStatus] = useState("idle");
   const [displayData, setDisplayData] = useState(
-    ["Burner", "Electronic Controls", "Industrial burners", "Valves"].reduce(
+    ["Industrial burners"].reduce(
       (accumulator, currentType) => [
         ...accumulator,
         ...data[currentType].slice(0, 3).map((fileName) => {
@@ -26,7 +26,7 @@ export default function CardList() {
   );
   const [dataFilter, setDataFilter] = useState({
     displayNumber: 12,
-    displayType: "all",
+    displayType:["Industrial burners"],
     status: "idle",
   });
 

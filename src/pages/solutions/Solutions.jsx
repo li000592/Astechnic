@@ -11,6 +11,7 @@ import Image2 from "../../assets/images/solutions/2.jpg";
 import Image3 from "../../assets/images/solutions/3.jpg";
 import Image4 from "../../assets/images/solutions/4.jpg";
 import Image5 from "../../assets/images/solutions/5.jpg";
+import Image6 from "../../assets/images/solutions/6.jpg";
 
 export default function Solutions() {
   return (
@@ -22,7 +23,7 @@ export default function Solutions() {
         body2="We invite you to join us in our mission to create a more sustainable future. Whether you're looking for low-emission products or innovative energy solutions, we are here to help. 
               Contact us today to learn more about how we can work together to build a better tomorrow.
               "
-        imageList={[Image1, Image2, Image3, Image4, Image5]}
+        imageList={[Image1, Image2, Image3, Image4, Image5, Image6]}
       />
       <CarouselSection />
       <CaseStudy />
