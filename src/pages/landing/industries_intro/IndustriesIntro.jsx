@@ -38,12 +38,12 @@ const serviesList = [
   },
   {
     label: "Chemical",
-    imageList: [image4_1],
+    imageList: [image4_1, image5_1],
   },
-  {
-    label: "Coal chemical",
-    imageList: [image5_1],
-  },
+  // {
+  //   label: "Coal chemical",
+  //   imageList: [image5_1],
+  // },
   {
     label: "Food",
     imageList: [image6_1],
@@ -77,7 +77,7 @@ export default function IndustriesIntro() {
       <Grid container spacing={2} style={{ justifyContent: "center" }}>
         {serviesList.map((category, index) => (
           <Grid xs={12} md={3} item key={category.label + index}>
-            <Thumbnail category={category.label} imageList={category.imageList} index={index} />
+            <Thumbnail category={category.label + " Industry"} imageList={category.imageList} index={index} />
           </Grid>
         ))}
       </Grid>

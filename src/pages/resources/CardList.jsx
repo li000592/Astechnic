@@ -17,7 +17,7 @@ export default function CardList() {
     ["Industrial burners"].reduce(
       (accumulator, currentType) => [
         ...accumulator,
-        ...data[currentType].slice(0, 3).map((fileName) => {
+        ...data[currentType].slice(0, 12).map((fileName) => {
           return { fileName: fileName, type: currentType };
         }),
       ],

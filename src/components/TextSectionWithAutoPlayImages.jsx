@@ -2,17 +2,19 @@ import React from "react";
 import { Grid, Paper } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
 
-function TextSectionWithAutoPlayImages({ title, body = "", body2 = "", imageList }) {
+function TextSectionWithAutoPlayImages({ title, body = "", body2 = "", imageList, isImageListLeft = false }) {
   return (
     <section>
       <Grid container>
-        <Grid item xs={12} md={6}>
-          <div className="text-section-container">
-            <h2>{title}</h2>
-            <p>{body}</p>
-            <p>{body2}</p>
-          </div>
-        </Grid>
+        {!isImageListLeft && (
+          <Grid item xs={12} md={6}>
+            <div className="text-section-container">
+              <h2>{title}</h2>
+              <p>{body}</p>
+              <p>{body2}</p>
+            </div>
+          </Grid>
+        )}
         <Grid item xs={12} md={6}>
           {imageList && (
             <div className="text-section-container">
@@ -26,6 +28,15 @@ function TextSectionWithAutoPlayImages({ title, body = "", body2 = "", imageList
             </div>
           )}
         </Grid>
+        {isImageListLeft && (
+          <Grid item xs={12} md={6}>
+            <div className="text-section-container">
+              <h2>{title}</h2>
+              <p>{body}</p>
+              <p>{body2}</p>
+            </div>
+          </Grid>
+        )}
       </Grid>
     </section>
   );

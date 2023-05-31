@@ -50,7 +50,23 @@ function Row(props) {
                         {type}
                       </TableCell>
                       <TableCell align="right">
-                        <Checkbox
+                        <Radio
+                          name={type}
+                          checked={dataFilter.displayType.includes(type)}
+                          onClick={(ev) => {
+                            const { checked, name } = ev.target;
+
+                            setDataFilter((obj) => {
+                              if(name === obj.displayType) return obj
+                              return {
+                                displayNumber: 12,
+                                displayType: [type],
+                                status: "rerender",
+                              };
+                            });
+                          }}
+                        />
+                        {/* <Checkbox
                           name={type}
                           checked={dataFilter.displayType.includes(type)}
                           onClick={(ev) => {
@@ -73,7 +89,7 @@ function Row(props) {
                               });
                             }
                           }}
-                        ></Checkbox>
+                        ></Checkbox> */}
                       </TableCell>
                     </TableRow>
                   ))}

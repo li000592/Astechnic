@@ -15,7 +15,7 @@ export default function Thumbnail({ category, index, imageList = [] }) {
       /> */}
       <Carousel animation="slide" autoPlay swip={false} indicators={false}>
         {imageList.map((item, i) => (
-          <Paper key={`test3-item-${i}`} elevation={10} style={{ height: "190px" }} className="">
+          <Paper key={`test3-item-${i}`} elevation={10} style={{ height: "210px" }} className="">
             <img src={item} alt="" />
           </Paper>
         ))}
