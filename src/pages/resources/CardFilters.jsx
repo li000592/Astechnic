@@ -21,6 +21,12 @@ function createData(name, type) {
     type,
   };
 }
+const typeMap = {
+  "Industrial burners": "Industrial burner",
+  Valves: "gas/air valve",
+  "Electronic Controls": "Controller / Actuator",
+  Burner: "low nitrogen burner",
+};
 
 function Row(props) {
   const { row, dataFilter, setDataFilter } = props;
@@ -47,7 +53,7 @@ function Row(props) {
                   {row.type.map((type) => (
                     <TableRow key={type} xs={{ "& > *": { borderBottom: "unset" } }}>
                       <TableCell component="th" scope="row">
-                        {type}
+                        {typeMap[type]}
                       </TableCell>
                       <TableCell align="right">
                         <Radio
@@ -57,7 +63,7 @@ function Row(props) {
                             const { checked, name } = ev.target;
 
                             setDataFilter((obj) => {
-                              if(name === obj.displayType) return obj
+                              if (name === obj.displayType) return obj;
                               return {
                                 displayNumber: 12,
                                 displayType: [type],

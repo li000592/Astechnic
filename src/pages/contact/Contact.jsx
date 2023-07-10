@@ -53,11 +53,20 @@ export default function Contact() {
     <Grid container>
       <Grid item xs={12} md={6}>
         <div className="contact-left-container">
-          <h2>See how we can help optimize your domain.</h2>
-          <p>
-            Taking your operation to the next level begins with a simple conversation. Tell us about yourself and your
-            industry and we’ll get back to you soon.
-          </p>
+          <div>
+            <h2>See how we can help optimize your domain.</h2>
+            <p>
+              Taking your operation to the next level begins with a simple conversation. Tell us about yourself and your
+              industry and we’ll get back to you soon.
+            </p>
+          </div>
+
+          <div>
+            {/* <h4>Astechinic Info:</h4> */}
+            <p>Tel1：+86 13630037928</p>
+            <p>Tel2：+86 4000839718</p>
+            <p>E-mail：Astechnic@163.com</p>
+          </div>
         </div>
       </Grid>
       <Grid item xs={12} md={6}>

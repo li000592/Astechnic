@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { CircularProgress, Grid } from "@mui/material";
+import Masonry from "@mui/lab/Masonry";
 import { useId } from "react";
 import ProductCard from "../../components/ProductCard";
 import CardFilters from "./CardFilters";
@@ -102,28 +103,30 @@ export default function CardList() {
           </Grid>
 
           <Grid item xs={12} md={9}>
-            <Grid container spacing={2}>
-              {displayData.map((element, index) => (
-                <Grid item xs={12} md={6} xl={4} key={listIds + index}>
-                  <Suspense fallback={<>loading...</>}>
-                    <ProductCard data={element} key={listIds + index} />
-                  </Suspense>
-                </Grid>
-              ))}
-              {!displayData.length && (
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "100%",
-                    height: "150px",
-                  }}
-                >
-                  <p>Please select the content types </p>
-                </div>
-              )}
-            </Grid>
+            <Masonry columns={3} spacing={2}>
+              {/* <Grid container spacing={2}> */}
+                {displayData.map((element, index) => (
+                  // <Grid item xs={12} md={6} xl={4} key={listIds + index}>
+                    <Suspense fallback={<>loading...</>}>
+                      <ProductCard data={element} key={listIds + index} />
+                    </Suspense>
+                  // </Grid>
+                ))}
+                {!displayData.length && (
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      width: "100%",
+                      height: "150px",
+                    }}
+                  >
+                    <p>Please select the content types </p>
+                  </div>
+                )}
+              {/* </Grid> */}
+            </Masonry>
           </Grid>
         </Grid>
       </section>

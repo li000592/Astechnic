@@ -7,7 +7,7 @@ export default function PageBanner({ title = "Resources" }) {
       <div className="background-div">
         <div className="page-banner-contianer">
           <section className="triangle-div">
-            <h1>AStechnic</h1>
+            <h1>Astechnic</h1>
             <h1>{title}</h1>
           </section>
         </div>

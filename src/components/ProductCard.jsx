@@ -18,8 +18,8 @@ export default function ProductCard({ data, height = "495px" }) {
   return (
     <Card
       sx={{
-        height: height,
-        maxWidth: "450px",
+        // height: height,
+        // maxWidth: "450px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -29,7 +29,8 @@ export default function ProductCard({ data, height = "495px" }) {
       <div>
         <CardMedia
           component="img"
-          height="355"
+          // height="355"
+          sx={{maxHeight: '450px'}}
           image={
             `/resources/${data.type}/${data?.fileName}/${data?.fileName}.${
               data.type === "Electronic Controls" ? "jpg" : "png"

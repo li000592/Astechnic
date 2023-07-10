@@ -56,7 +56,7 @@ function AboutVideoSection({ body, body2, title }) {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe> */}
-            <ReactPlayer controls playing url="https://youtu.be/VKicb72mE7k" width="100%" height={videoHeight} muted />
+            <ReactPlayer controls playing url="https://youtu.be/eHxOfeyu3Pc" width="100%" height={videoHeight} muted />
           </div>
         </Grid>
       </Grid>
