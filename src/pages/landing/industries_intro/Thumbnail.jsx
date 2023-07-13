@@ -1,5 +1,4 @@
 import Carousel from "react-material-ui-carousel";
-import Img1 from "../../../assets/images/thumbnail.webp";
 import { Paper } from "@mui/material";
 
 export default function Thumbnail({ category, index, imageList = [] }) {
@@ -15,7 +14,7 @@ export default function Thumbnail({ category, index, imageList = [] }) {
       /> */}
       <Carousel animation="slide" autoPlay swip={false} indicators={false}>
         {imageList.map((item, i) => (
-          <Paper key={`test3-item-${i}`} elevation={10} style={{ height: "310px" }} className="">
+          <Paper key={`test3-item-${i}`} className="carousel-image-container" elevation={10}>
             <img src={item} alt="" />
           </Paper>
         ))}

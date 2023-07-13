@@ -29,19 +29,25 @@
 }
 
 .add-symbol {
-    color: var(--theme-color-1);
-    font-size: 18px;
-  }
+  color: var(--theme-color-1);
+  font-size: 18px;
+}
 
-  @media (max-width: 700px) {
-    .industries-title {
-      font-size: 24px;
-    }
-    .thumb-text {
-      font-size: 12px;
-    }
-    /* .add-symbol {
+@media (max-width: 700px) {
+  .industries-title {
+    font-size: 24px;
+  }
+  .thumb-text {
+    font-size: 12px;
+  }
+  .carousel-image-container {
+    height: 480px;
+  }
+  /* .add-symbol {
       font-size: ;
     } */
-  }
-  
+}
+
+.carousel-image-container {
+  height: 320px;
+}
