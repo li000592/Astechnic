@@ -30,7 +30,7 @@ export default function ProductCard({ data, height = "495px" }) {
         <CardMedia
           component="img"
           // height="355"
-          // sx={{maxHeight: '450px'}}
+           sx={{minHeight: '200px'}}
           image={
             `/resources/${data.type}/${data?.fileName}/${data?.fileName}.${
               data.type === "Electronic Controls" ? "jpg" : "png"
