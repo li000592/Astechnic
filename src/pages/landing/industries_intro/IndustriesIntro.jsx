@@ -6,6 +6,8 @@ import image1_1 from "../../../assets/images/landing/1-1.jpg";
 import image1_2 from "../../../assets/images/landing/1-2.jpg";
 import image1_3 from "../../../assets/images/landing/1-3.jpg";
 import image1_4 from "../../../assets/images/landing/1-4.jpg";
+import image1_5 from "../../../assets/images/landing/1-5.jpg";
+import image1_6 from "../../../assets/images/landing/1-6.jpg";
 import image2_1 from "../../../assets/images/landing/2-1.jpg";
 import image2_2 from "../../../assets/images/landing/2-2.jpg";
 import image2_3 from "../../../assets/images/landing/2-3.jpg";
@@ -17,16 +19,32 @@ import image3_4 from "../../../assets/images/landing/3-4.jpg";
 import image4_1 from "../../../assets/images/landing/4-1.jpg";
 import image5_1 from "../../../assets/images/landing/5-1.jpg";
 import image6_1 from "../../../assets/images/landing/6-1.jpg";
+import image6_2 from "../../../assets/images/landing/6-2.jpg";
+import image6_3 from "../../../assets/images/landing/6-3.jpg";
+import image6_4 from "../../../assets/images/landing/6-4.jpg";
 import image7_1 from "../../../assets/images/landing/7-1.jpg";
+import image7_2 from "../../../assets/images/landing/7-2.jpg";
+import image7_3 from "../../../assets/images/landing/7-3.jpg";
+import image7_4 from "../../../assets/images/landing/7-4.jpg";
 import image8_1 from "../../../assets/images/landing/8-1.jpg";
+import image8_2 from "../../../assets/images/landing/8-2.jpg";
+import image8_3 from "../../../assets/images/landing/8-3.jpg";
+import image8_4 from "../../../assets/images/landing/8-4.jpg";
 import image9_1 from "../../../assets/images/landing/9-1.jpg";
+import image9_2 from "../../../assets/images/landing/9-2.jpg";
+import image9_3 from "../../../assets/images/landing/9-3.jpg";
+import image9_4 from "../../../assets/images/landing/9-4.jpg";
+import image9_5 from "../../../assets/images/landing/9-5.jpg";
+import image9_6 from "../../../assets/images/landing/9-6.jpg";
 import image10_1 from "../../../assets/images/landing/10-1.jpg";
+import image10_2 from "../../../assets/images/landing/10-2.jpg";
+import image10_3 from "../../../assets/images/landing/10-3.jpg";
 import image11_1 from "../../../assets/images/landing/11-1.jpg";
 
 const serviesList = [
   {
     label: "Steel",
-    imageList: [image1_1, image1_2, image1_3, image1_4],
+    imageList: [image1_1, image1_2, image1_3, image1_4, image1_5, image1_6],
   },
   {
     label: "Heat treatment",
@@ -46,23 +64,23 @@ const serviesList = [
   // },
   {
     label: "Food",
-    imageList: [image6_1],
+    imageList: [image6_1, image6_2, image6_3, image6_4],
   },
   {
     label: "Ceramic Sanitary-Ware",
-    imageList: [image7_1],
+    imageList: [image7_1, image7_2, image7_3, image7_4],
   },
   {
     label: "Environmental",
-    imageList: [image8_1,image11_1],
+    imageList: [image8_1, image8_2, image8_3, image8_4, image11_1],
   },
   {
     label: "New Energy",
-    imageList: [image9_1],
+    imageList: [image9_1, image9_2, image9_3, image9_4, image9_5, image9_6],
   },
   {
     label: "Textile",
-    imageList: [image10_1],
+    imageList: [image10_1, image10_2, image10_3],
   },
   // {
   //   label: "Porcelain Enamel",
