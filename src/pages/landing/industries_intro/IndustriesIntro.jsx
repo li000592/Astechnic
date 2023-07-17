@@ -40,6 +40,7 @@ import image10_1 from "../../../assets/images/landing/10-1.jpg";
 import image10_2 from "../../../assets/images/landing/10-2.jpg";
 import image10_3 from "../../../assets/images/landing/10-3.jpg";
 import image11_1 from "../../../assets/images/landing/11-1.jpg";
+import image11_2 from "../../../assets/images/landing/11-2.jpg";
 
 const serviesList = [
   {
@@ -68,7 +69,7 @@ const serviesList = [
   },
   {
     label: "Ceramic Sanitary-Ware",
-    imageList: [image7_1, image7_2, image7_3, image7_4],
+    imageList: [image7_1, image7_2, image7_3, image7_4,image11_2],
   },
   {
     label: "Environmental",
