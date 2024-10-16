@@ -30,11 +30,11 @@ function App() {
     <>
       <Header />
       <Routes>
-        {/* <Route path="/" element={<Landing />}></Route>
+        <Route path="/" element={<Landing />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/resources" element={<Resources />}></Route>
         <Route path="/solutions" element={<Solution />}></Route>
-        <Route path="/contactus" element={<Contact />}></Route> */}
+        <Route path="/contactus" element={<Contact />}></Route>
         <Route path="*" element={<FOF/>}></Route>
       </Routes>
       {isMessageDialogOpen && <MessageDialog isOpen={isMessageDialogOpen} setIsOpen={setIsMessageDialogOpen} />}
