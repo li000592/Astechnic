@@ -8,13 +8,14 @@ export default function MainBoard() {
   useEffect(() => {
     setTimeout(() => {
       setIsDisplay(true);
-    }, 1000);
+    }, 2000);
   }, []);
 
   return (
-    <section id="video-container">
-      <div className="video-filter"></div>
-      <Suspense fallback={<>loading...</>}>
+    <Suspense fallback={<>loading...</>}>
+      <section id="video-container">
+        <div className="video-filter"></div>
+
         <video
           preload="auto"
           webkit-playsinline="true"
@@ -28,33 +29,34 @@ export default function MainBoard() {
           <source src={mainVideo} type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
-      </Suspense>
 
-      <div className="content">
-        {isDisplay && (
-          <h1 className="video-title animate__animated animate__fadeInDown">industrial combustion</h1>
-        )}
-
-        <div className="line-container animate__animated animate__rotateInDownLeft">
-          <div className="video-line "></div>
+        <div className="content">
+          {isDisplay && (
+            <>
+              <h1 className="video-title animate__animated animate__fadeInDown">industrial combustion</h1>
+              <div className="line-container animate__animated animate__rotateInDownLeft">
+                <div className="video-line "></div>
+              </div>
+              <p className="video-text animate__animated animate__fadeInUp">We focus on combustion.</p>
+            </>
+          )}
         </div>
-        {isDisplay && <p className="video-text animate__animated animate__fadeInUp">We focus on combustion.</p>}
-      </div>
 
-      {/* {isDisplay && (
+        {/* {isDisplay && (
         <div className="green-brick-container animate__animated animate__fadeInRight">
           <div className="green-brick"></div>
           <div className="green-brick-triangle" />
         </div>
       )} */}
 
-      {isDisplay && (
-        <div className="more-button-container ">
-          <a onClick={() => document.getElementById("breif-intro").scrollIntoView()}>
-            <div className="more-button"></div>
-          </a>
-        </div>
-      )}
-    </section>
+        {isDisplay && (
+          <div className="more-button-container ">
+            <a onClick={() => document.getElementById("breif-intro").scrollIntoView()}>
+              <div className="more-button"></div>
+            </a>
+          </div>
+        )}
+      </section>
+    </Suspense>
   );
 }
