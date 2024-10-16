@@ -16,8 +16,6 @@ Check out the live demo of the project: [Astechnic Demo](https://astechnic-demo.
 
 ## Technologies Used/ Tested
 
-Before you begin, ensure that you have the following tools installed:
-
 - **React**: JavaScript library for building user interfaces
 - **React Router**: For routing and navigation between pages
 - **Vite**: Fast front-end build tool for development
