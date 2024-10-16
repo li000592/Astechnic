@@ -14,11 +14,7 @@ Check out the live demo of the project: [Astechnic Demo](https://astechnic-demo.
 - Serverless architecture for scalability and efficiency as per client needs
 - Suspense loading for smooth product display and an enhanced user experience
 
-## Getting Started
-
-These instructions will help you set up and run the project locally for development and testing purposes.
-
-### Technologies Used/ Tested
+## Technologies Used/ Tested
 
 Before you begin, ensure that you have the following tools installed:
 
